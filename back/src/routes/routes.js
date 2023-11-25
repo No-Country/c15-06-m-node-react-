@@ -31,11 +31,11 @@ router.put('/users/:id', (req, res) => {
 })
 
 router.post('/product', (req, res) => {
-  const user = productSchema(req.body)
-  user.save().then((data) => res.json(data)).catch((error) => res.json({ message: error }))
+  const product = productSchema(req.body)
+  product.save().then((data) => res.json(data)).catch((error) => res.json({ message: error }))
 })
 router.get('/product', (req, res) => {
-  res.send('get product')
+  productSchema.find().then((data) => res.json(data)).catch((error) => res.json({ message: error }))
 })
 
 router.get('/product/:id', (req, res) => {

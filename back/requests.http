@@ -3,8 +3,8 @@ POST http://localhost:3001/api/users HTTP/1.1
 content-Type: application/json
 
 {
-    "name": "testUno",
-    "email": "testUno@test.com",
+    "name": "sulli",
+    "email": "sulliUno@test.com",
     "password": "testUno"
 }
 ###
@@ -36,8 +36,8 @@ content-Type: application/json
 
 {
     "name": "quinoa",
-    "description": "descripcion de la quinoa",
-    "price": "10000"
+    "description": "descripcion de la chia",
+    "price": "25000"
 }
 
 ###
