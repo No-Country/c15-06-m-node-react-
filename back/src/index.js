@@ -6,7 +6,7 @@ const userRoute = require ('./routes/routes.js')
 const app = express()
 const port = process.env.PORT || 3001
 
-//moddleware
+//middleware
 app.use('/api', userRoute )
 
 //routes
