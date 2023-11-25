@@ -2,7 +2,23 @@
 POST http://localhost:3001/api/users HTTP/1.1
 content-Type: application/json
 
+{
+    "name": "testUno",
+    "email": "testUno@test.com",
+    "password": "testUno"
+}
+
+###
+GET  http://localhost:3001/api/users HTTP/1.1
+content-Type: application/json
+
+###
+GET  http://localhost:3001/api/users/6561ecb41dfd57863531fc6b HTTP/1.1
+content-Type: application/json
+
 ###
 
 GET  http://localhost:3001/api/product HTTP/1.1
 content-Type: application/json
+
+###
