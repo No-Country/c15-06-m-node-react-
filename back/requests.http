@@ -7,6 +7,15 @@ content-Type: application/json
     "email": "testUno@test.com",
     "password": "testUno"
 }
+###
+PUT http://localhost:3001/api/users/6562374d2fe32da552e75fc3 HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Angel",
+    "email": "angeltest@test.com",
+    "password": "prueba123456"
+}
 
 ###
 GET  http://localhost:3001/api/users HTTP/1.1
@@ -22,3 +31,15 @@ GET  http://localhost:3001/api/product HTTP/1.1
 content-Type: application/json
 
 ###
+POST http://localhost:3001/api/product HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "quinoa",
+    "description": "descripcion de la quinoa",
+    "price": "10000"
+}
+
+###
+GET  http://localhost:3001/api/product/656232fda5e16dcd58787b8a HTTP/1.1
+content-Type: application/json
