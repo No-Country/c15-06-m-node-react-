@@ -1,46 +1,23 @@
 const express = require('express')
-const userSchema = require('../models/user.js')
-const productSchema = require('../models/products')
-
+const { createUser } = require('../controllers/createUser')
+const { updateUser } = require('../controllers/updateUser.js')
+const { getUserById } = require('../controllers/getUserById.js')
+const { getAllProducts } = require('../controllers/getAllProducts.js')
+const { getAllUsers } = require('../controllers/getAllUsers.js')
+const { getProductById } = require('../controllers/getProductById.js')
+const { createProduct } = require('../controllers/createProduct')
+const { updateProduct } = require('../controllers/updateProduct.js')
 const router = express.Router()
 
-// create user
-router.post('/users', (req, res) => {
-  const user = userSchema(req.body)
-  user.save().then((data) => res.json(data)).catch((error) => res.json({ message: error }))
-})
-// get all users
-router.get('/users', (req, res) => {
-  userSchema.find().then((data) => res.json(data)).catch((error) => res.json({ message: error }))
-})
+// Rutas usuarios
+router.post('/users', createUser)
+router.get('/users', getAllUsers)
+router.get('/users/:id', getUserById)
+router.put('/users/:id', updateUser)
 
-// get users por id
-router.get('/users/:id', (req, res) => {
-  const { id } = req.params
-  userSchema.findById(id).then((data) => res.json(data)).catch((error) => res.json({ message: error }))
-})
-
-// update user
-router.put('/users/:id', (req, res) => {
-  const { id } = req.params
-  const { name, email, password } = req.body
-  userSchema
-    .updateOne({ _id: id }, { $set: { name, email, password } })
-    .then((data) => res.json(data))
-    .catch((error) => res.json({ message: error }))
-})
-
-router.post('/product', (req, res) => {
-  const user = productSchema(req.body)
-  user.save().then((data) => res.json(data)).catch((error) => res.json({ message: error }))
-})
-router.get('/product', (req, res) => {
-  res.send('get product')
-})
-
-router.get('/product/:id', (req, res) => {
-  const { id } = req.params
-  productSchema.findById(id).then((data) => res.json(data)).catch((error) => res.json({ message: error }))
-})
+router.post('/product', createProduct)
+router.get('/product', getAllProducts)
+router.get('/product/:id', getProductById)
+router.put('/product/:id', updateProduct)
 
 module.exports = router
