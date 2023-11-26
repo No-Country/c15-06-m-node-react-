@@ -3,12 +3,12 @@ POST http://localhost:3001/api/users HTTP/1.1
 content-Type: application/json
 
 {
-    "name": "sulli",
-    "email": "sulliUno@test.com",
-    "password": "testUno"
+    "name": "testprueba3",
+    "email": "sulliTres@test.com",
+    "password": "testTres"
 }
 ###
-PUT http://localhost:3001/api/users/6562374d2fe32da552e75fc3 HTTP/1.1
+PUT http://localhost:3001/api/users/656327dbe3970b38e7c58ed HTTP/1.1
 content-Type: application/json
 
 {
@@ -35,11 +35,21 @@ POST http://localhost:3001/api/product HTTP/1.1
 content-Type: application/json
 
 {
-    "name": "quinoa",
+    "name": "prueba",
     "description": "descripcion de la chia",
     "price": "25000"
 }
 
 ###
-GET  http://localhost:3001/api/product/656232fda5e16dcd58787b8a HTTP/1.1
+GET  http://localhost:3001/api/product/656311e28daa0d735bf476b1 HTTP/1.1
 content-Type: application/json
+
+###
+PUT  http://localhost:3001/api/product/656311e28daa0d735bf476b1 HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "PRUEBA",
+    "description": "descripcion de la pRUEBA",
+    "price": "25000"
+}
