@@ -1,0 +1,22 @@
+[
+    {
+        "name": "quinoa dos",
+        "description": "descripcion de la quinoa",
+        "price": "10000"
+    },
+    {
+        "name": "chia",
+        "description": "descripcion de la chia",
+        "price": "2000"
+    },
+    {
+        "name": "aguacate",
+        "description": "descripcion del aguacate",
+        "price": "2000"
+    },
+    {
+        "name": "avena",
+        "description": "descripcion de la avena",
+        "price": "15000"
+    }
+]
