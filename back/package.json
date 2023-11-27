@@ -10,11 +10,14 @@
   "author": "Angel Tirado",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "eslint": "^8.54.0",
     "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.3.0",
-    "mongoose": "^8.0.1"
+    "mongoose": "^8.0.1",
+    "vercel": "^32.5.6"
   },
   "devDependencies": {
     "eslint": "^8.54.0",
