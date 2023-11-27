@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+const { type } = require('os')
 
-const productSchema = mongoose.Schema({
+const productSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -16,8 +17,13 @@ const productSchema = mongoose.Schema({
   id: {
     type: String,
     unique: false
+  },
+  imageUrl: {
+    type: Array(type.String)
   }
 
+}, {
+  timestamps: true
 })
 
 module.exports = mongoose.model('Product', productSchema)

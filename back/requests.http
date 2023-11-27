@@ -8,12 +8,12 @@ content-Type: application/json
     "password": "testTres"
 }
 ###
-PUT http://localhost:3001/api/users/656327dbe3970b38e7c58ed HTTP/1.1
+PUT http://localhost:3001/api/users/6564b0bfcaa418ca8e66fd44 HTTP/1.1
 content-Type: application/json
 
 {
-    "name": "Angel",
-    "email": "angeltest@test.com",
+    "name": "Alejandro",
+    "email": "alejandrtest@test.com",
     "password": "prueba123456"
 }
 
@@ -22,7 +22,7 @@ GET  http://localhost:3001/api/users HTTP/1.1
 content-Type: application/json
 
 ###
-GET  http://localhost:3001/api/users/6561ecb41dfd57863531fc6b HTTP/1.1
+GET  http://localhost:3001/api/users/6564b0bfcaa418ca8e66fd44 HTTP/1.1
 content-Type: application/json
 
 ###
@@ -35,7 +35,7 @@ POST http://localhost:3001/api/product HTTP/1.1
 content-Type: application/json
 
 {
-    "name": "prueba",
+    "name": "prueba chia",
     "description": "descripcion de la chia",
     "price": "25000"
 }
@@ -52,4 +52,21 @@ content-Type: application/json
     "name": "PRUEBA",
     "description": "descripcion de la pRUEBA",
     "price": "25000"
+}
+
+###
+
+POST http://localhost:3001/api/register HTTP/1.1
+content-Type: application/json
+{
+    "hola": "estamos registrando"
+}
+
+###
+POST http://localhost:3001/api/register HTTP/1.1
+content-Type: application/json
+{
+  "name": "test14",
+  "password": "123456789",
+  "email": "test14@email.com"
 }
