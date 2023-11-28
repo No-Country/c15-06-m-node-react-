@@ -1,22 +1,26 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cookieParser = require('cookie-parser')
 require('dotenv').config()
 const userRoute = require('./src/routes/routes')
 
 const app = express()
 const port = process.env.PORT || 3001
 
-// moddleware
+// Middleware
 app.use(express.json())
-app.use('/api', userRoute)
+app.use(cookieParser())
 
-// routes
+// Routes
+app.use('/api', userRoute)
 
 app.get('/', (req, res) => {
   res.send('BACKEND ECO VIDA STORE')
 })
 
-// mongodb connection
-mongoose.connect(process.env.MONGODB_URI).then(() => console.log('Connected to MongoDB Atlas'))
-  .catch((error) => console.log(error))
-app.listen(port, () => console.log('server listening on port', port))
+// MongoDB connection
+mongoose.connect(process.env.MONGODB_URI)
+  .then(() => console.log('Connected to MongoDB Atlas'))
+  .catch((error) => console.error(error))
+
+app.listen(port, () => console.log('Server listening on port', port))
