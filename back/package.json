@@ -17,6 +17,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.1",
+    "render": "^0.1.4",
     "vercel": "^32.5.6"
   },
   "devDependencies": {
