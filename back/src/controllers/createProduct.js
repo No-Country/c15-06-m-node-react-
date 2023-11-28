@@ -14,7 +14,7 @@ const createProduct = async (req, res) => {
       name: productSaved.name,
       description: productSaved.description,
       price: productSaved.price,
-      
+
       createdAt: productSaved.createdAt
     })
   } catch (error) {
