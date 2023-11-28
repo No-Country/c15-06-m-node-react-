@@ -61,6 +61,20 @@ const logout = (req, res) => {
   return res.sendStatus(200)
 }
 
+const profile = async (req, res) => {
+  const userFound = await userSchema.findById(req.user.id)
+
+  if (!userFound) return res.status(400).json({ message: 'Usuario no encontrado' })
+
+  return res.json({
+    id: userFound._id,
+    username: userFound.name,
+    email: userFound.email,
+    createdAt: userFound.createdAt,
+    updatedAt: userFound.updatedAt
+  })
+}
+
 module.exports = {
-  register, login, logout
+  register, login, logout, profile
 }
