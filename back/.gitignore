@@ -1,3 +1,7 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
 # Logs
 logs
 *.log
@@ -37,9 +41,7 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/
 
-# Dependency directories
-node_modules/
-jspm_packages/
+
 
 # TypeScript v1 declaration files
 typings/
@@ -106,3 +108,6 @@ dist
 # package-lock.json
 package-lock.json
 
+.vercel
+.env
+.environment
