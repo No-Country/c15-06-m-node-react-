@@ -51,7 +51,7 @@
     "name": "Orégano Seco",
     "description": "Orégano seco, esencial para pizzas y platos mediterráneos.",
     "price": 1.99,
-    "imageUrl": [],
+    "imageUrl": ["https://st2.depositphotos.com/1006009/6600/i/450/depositphotos_66001421-stock-photo-oregano-leaf.jpg"],
     "category": "Hierbas y Especias",
     "features": "Aroma intenso, recolectado a mano."
   },
@@ -59,17 +59,17 @@
     "name": "Pimienta Negra Entera",
     "description": "Granos de pimienta negra, aporta un sabor robusto a tus platos.",
     "price": 4.99,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1506085621370-98b475435879?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Hierbas y Especias",
     "features": "Molinillo incorporado, frescura garantizada."
   },
   {
-    "name": "Proteína Vegana Premium",
-    "description": "Polvo de proteína vegana de alta calidad con mezcla de aminoácidos esenciales.",
-    "price": 29.99,
-    "imageUrl": [],
+    "name": "Hamburguesa de Espinacas",
+    "description": "Una opción deliciosa y saludable para disfrutar en tus comidas sin carne.",
+    "price": 3.79,
+    "imageUrl": [""],
     "category": "Proteicos",
-    "features": "Rico en proteína de guisante, Libre de OMG, Alta en fibra para una digestión saludable."
+    "features": "Fuente de proteínas y fibra. Textura jugosa y sabor equilibrado. Sin ingredientes artificiales."
   },
   {
     "name": "Barrita de Proteína",
@@ -80,12 +80,12 @@
     "features": "Proteína de almendra para un impulso de energía, Baja en azúcares, Sin gluten para dietas variadas."
   },
   {
-    "name": "Proteína de Soja Orgánica",
-    "description": "Proteína en polvo derivada de soja orgánica, perfecta para batidos nutritivos.",
-    "price": 24.99,
+    "name": "Soja texturizada",
+    "description": "Producto deshidratado de soja con textura similar a la carne. Ideal para platos vegetarianos.",
+    "price": 3.99,
     "imageUrl": [],
     "category": "Proteicos",
-    "features": "Proteína de soja orgánica, Sin saborizantes artificiales, Contribuye a una alimentación sostenible."
+    "features": "Rica en proteínas, adaptable a diversas recetas culinarias gracias a su capacidad para absorber sabores. Baja en grasas saturadas y libre de colesterol."
   },
   {
     "name": "Leche de Almendras Fortificada",
