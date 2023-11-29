@@ -11,3 +11,5 @@ End point
 Consultas
 https://c15-06-m-node-react-production.up.railway.app/api y la ruta a consultar
 
+URL Frontend: https://ecovidastore1.netlify.app
+
