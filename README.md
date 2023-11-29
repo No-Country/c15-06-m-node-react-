@@ -3,17 +3,14 @@ E-commerce sustentable de alimentos: "EcoVida Store".  Nuestra página va destin
 
 End point
 ###
-POST http://localhost:3001/api/users HTTP/1.1
-content-Type: application/json
-
+POST http://localhost:3001/api/users 
 {
     "name": "testprueba3",
     "email": "sulliTres@test.com",
     "password": "testTres"
 }
 ###
-PUT http://localhost:3001/api/users/6564b0bfcaa418ca8e66fd44 HTTP/1.1
-content-Type: application/json
+PUT http://localhost:3001/api/users/:id
 
 {
     "name": "Alejandro",
@@ -22,21 +19,17 @@ content-Type: application/json
 }
 
 ###
-GET  http://localhost:3001/api/users HTTP/1.1
-content-Type: application/json
+GET  http://localhost:3001/api/users 
 
 ###
 GET  http://localhost:3001/api/users/6564b0bfcaa418ca8e66fd44 HTTP/1.1
 content-Type: application/json
 
 ###
-
-GET  http://localhost:3001/api/product HTTP/1.1
-content-Type: application/json
+GET  http://localhost:3001/api/product
 
 ###
-POST http://localhost:3001/api/product HTTP/1.1
-content-Type: application/json
+POST http://localhost:3001/api/product 
 
 {
     "name": "prueba chia",
@@ -45,15 +38,17 @@ content-Type: application/json
 }
 
 ###
-GET  http://localhost:3001/api/product/656311e28daa0d735bf476b1 HTTP/1.1
-content-Type: application/json
-
+GET  http://localhost:3001/api/product/:id
 ###
-PUT  http://localhost:3001/api/product/656311e28daa0d735bf476b1 HTTP/1.1
-content-Type: application/json
+PUT  http://localhost:3001/api/product/:id
 
 {
     "name": "PRUEBA",
     "description": "descripcion de la pRUEBA",
     "price": "25000"
 }
+
+🌐 URL backend: https://c15-06-m-node-react-production.up.railway.app/
+Consultas
+https://c15-06-m-node-react-production.up.railway.app/api y la ruta a consultar
+
