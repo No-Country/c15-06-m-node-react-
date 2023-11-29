@@ -51,6 +51,7 @@
     "name": "Orégano Seco",
     "description": "Orégano seco, esencial para pizzas y platos mediterráneos.",
     "price": 1.99,
+    "imageUrl": [],
     "category": "Hierbas y Especias",
     "features": "Aroma intenso, recolectado a mano."
   },
@@ -58,6 +59,7 @@
     "name": "Pimienta Negra Entera",
     "description": "Granos de pimienta negra, aporta un sabor robusto a tus platos.",
     "price": 4.99,
+    "imageUrl": [],
     "category": "Hierbas y Especias",
     "features": "Molinillo incorporado, frescura garantizada."
   },
@@ -65,6 +67,7 @@
     "name": "Proteína Vegana Premium",
     "description": "Polvo de proteína vegana de alta calidad con mezcla de aminoácidos esenciales.",
     "price": 29.99,
+    "imageUrl": [],
     "category": "Proteicos",
     "features": "Rico en proteína de guisante, Libre de OMG, Alta en fibra para una digestión saludable."
   },
@@ -72,6 +75,7 @@
     "name": "Barrita de Proteína",
     "description": "Barrita energética con proteínas vegetales, ideal para snacks saludables.",
     "price": 2.99,
+    "imageUrl": [],
     "category": "Proteicos",
     "features": "Proteína de almendra para un impulso de energía, Baja en azúcares, Sin gluten para dietas variadas."
   },
@@ -79,6 +83,7 @@
     "name": "Proteína de Soja Orgánica",
     "description": "Proteína en polvo derivada de soja orgánica, perfecta para batidos nutritivos.",
     "price": 24.99,
+    "imageUrl": [],
     "category": "Proteicos",
     "features": "Proteína de soja orgánica, Sin saborizantes artificiales, Contribuye a una alimentación sostenible."
   },
@@ -86,6 +91,7 @@
     "name": "Leche de Almendras Fortificada",
     "description": "Leche de almendras enriquecida con vitaminas y minerales esenciales.",
     "price": 3.49,
+    "imageUrl": [],
     "category": "Proteicos",
     "features": "Fortificada con calcio y vitamina D, Baja en calorías para una opción ligera, Sin lactosa para intolerantes."
   },
@@ -93,6 +99,7 @@
     "name": "Legumbres Mixtas Orgánicas",
     "description": "Paquete de legumbres variadas, cultivadas de forma orgánica y sostenible.",
     "price": 8.49,
+    "imageUrl": [],
     "category": "Legumbres",
     "features": "Mezcla de garbanzos, lentejas y frijoles negros, Cultivadas de manera orgánica y sostenible."
   },
@@ -100,6 +107,7 @@
     "name": "Harina de Garbanzo",
     "description": "Harina fina y nutritiva hecha de garbanzos, perfecta para recetas sin gluten.",
     "price": 4.99,
+    "imageUrl": [],
     "category": "Legumbres",
     "features": "Alta en proteínas para una opción saludable, Sin gluten para dietas sin gluten, Ideal para panificación."
   },
@@ -107,6 +115,7 @@
     "name": "Frijoles Negros en Conserva",
     "description": "Frijoles negros cocidos y listos para usar en ensaladas, sopas y guisos.",
     "price": 2.79,
+    "imageUrl": [],
     "category": "Legumbres",
     "features": "Listos para consumir, Alta en fibra para la digestión, Sin conservantes artificiales."
   },
@@ -114,6 +123,7 @@
     "name": "Lentejas Rojas Secas",
     "description": "Lentejas rojas secas, ricas en proteínas y fáciles de cocinar.",
     "price": 3.29,
+    "imageUrl": [],
     "category": "Legumbres",
     "features": "Cocción rápida para mayor comodidad, Alta en hierro para la salud, Versátil en diversas recetas."
   },
@@ -121,6 +131,7 @@
     "name": "Infusión de Manzanilla",
     "description": "Mezcla de manzanilla de alta calidad para una infusión relajante y reconfortante.",
     "price": 3.49,
+    "imageUrl": [],
     "category": "Infusiones",
     "features": "Manzanilla orgánica para una experiencia natural, Sin cafeína para relajación, Calidad premium en cada bolsita."
   },
@@ -128,6 +139,7 @@
     "name": "Té Verde Antioxidante",
     "description": "Té verde con propiedades antioxidantes y estimulantes, perfecto para cualquier momento del día.",
     "price": 5.99,
+    "imageUrl": [],
     "category": "Infusiones",
     "features": "Hoja entera para un sabor auténtico, Alto contenido de antioxidantes, Refrescante y revitalizante."
   },
@@ -135,6 +147,7 @@
     "name": "Infusión de Hierbabuena",
     "description": "Mezcla de hierbabuena fresca para una infusión revitalizante y digestiva.",
     "price": 4.49,
+    "imageUrl": [],
     "category": "Infusiones",
     "features": "Hierbabuena natural para un sabor puro, Digestiva para después de las comidas, Aromática y reconfortante."
   },
@@ -142,6 +155,7 @@
     "name": "Té de Cúrcuma y Jengibre",
     "description": "Té herbal con cúrcuma y jengibre, conocido por sus propiedades antiinflamatorias.",
     "price": 6.99,
+    "imageUrl": [],
     "category": "Infusiones",
     "features": "Cúrcuma y jengibre para beneficios antiinflamatorios, Sin cafeína para relajación, Bienestar digestivo."
   }
