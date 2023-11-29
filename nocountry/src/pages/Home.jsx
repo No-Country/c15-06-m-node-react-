@@ -1,7 +1,10 @@
+import { Main } from '../layouts/Main'
+import { Aside } from '../layouts/Aside'
+
 export function Home() {
   return (
-    <>
-      <h2 className='text-3xl font-bold underline'>Home</h2>
-    </>
+    <section className='flex w-full min-h-screen'>
+      <Main />
+    </section>
   )
 }
