@@ -9,7 +9,7 @@
   },
   {
     "name": "Avena",
-    "description": "Avena integral orgánica, ideal para desayunos nutritivos y energéticos",
+    "description": "Avena integral orgánica, ideal para desayunos nutritivos y energéticos.",
     "price": 3.49,
     "imageUrl":["https://images.unsplash.com/photo-1586810504230-09dab6b8e01b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Frutos secos y cereales",
@@ -59,7 +59,7 @@
     "name": "Pimienta Negra Entera",
     "description": "Granos de pimienta negra, aporta un sabor robusto a tus platos.",
     "price": 4.99,
-    "imageUrl": ["https://images.unsplash.com/photo-1506085621370-98b475435879?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": ["https://images.unsplash.com/photo-1585138977386-373519e28a3c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Hierbas y Especias",
     "features": "Molinillo incorporado, frescura garantizada."
   },
@@ -67,7 +67,7 @@
     "name": "Hamburguesa de Espinacas",
     "description": "Una opción deliciosa y saludable para disfrutar en tus comidas sin carne.",
     "price": 3.79,
-    "imageUrl": [""],
+    "imageUrl": ["https://scontent.faep1-1.fna.fbcdn.net/v/t1.6435-9/93058000_602105960385240_9160199342877835264_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c2f564&_nc_ohc=wNXL3ncGd6sAX-omjum&_nc_ht=scontent.faep1-1.fna&oh=00_AfCYzoxxLiITUZMqtpJhCDv-7dYSZ1b8jF8IqwNYUJY-Pw&oe=658FEC2F"],
     "category": "Proteicos",
     "features": "Fuente de proteínas y fibra. Textura jugosa y sabor equilibrado. Sin ingredientes artificiales."
   },
@@ -75,88 +75,88 @@
     "name": "Barrita de Proteína",
     "description": "Barrita energética con proteínas vegetales, ideal para snacks saludables.",
     "price": 2.99,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1633360821154-1935fb5671e6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Proteicos",
-    "features": "Proteína de almendra para un impulso de energía, Baja en azúcares, Sin gluten para dietas variadas."
+    "features": "Proteína de almendra para un impulso de energía, baja en azúcares, sin gluten para dietas variadas."
   },
   {
     "name": "Soja texturizada",
     "description": "Producto deshidratado de soja con textura similar a la carne. Ideal para platos vegetarianos.",
     "price": 3.99,
-    "imageUrl": [],
+    "imageUrl": ["https://images.ecestaticos.com/-HsmqZ519pPzdN_8qsRdMUj7qt8=/117x1:2003x1413/996x747/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F670%2F039%2F2c0%2F6700392c0a8838d53b58862cbabf92a6.jpg"],
     "category": "Proteicos",
     "features": "Rica en proteínas, adaptable a diversas recetas culinarias gracias a su capacidad para absorber sabores. Baja en grasas saturadas y libre de colesterol."
   },
   {
-    "name": "Leche de Almendras Fortificada",
+    "name": "Leche de Almendras",
     "description": "Leche de almendras enriquecida con vitaminas y minerales esenciales.",
     "price": 3.49,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1583507623011-5cc6ff99e11c?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Proteicos",
-    "features": "Fortificada con calcio y vitamina D, Baja en calorías para una opción ligera, Sin lactosa para intolerantes."
+    "features": "Fortificada con calcio y vitamina D, baja en calorías para una opción ligera, sin lactosa para intolerantes."
   },
   {
     "name": "Legumbres Mixtas Orgánicas",
     "description": "Paquete de legumbres variadas, cultivadas de forma orgánica y sostenible.",
     "price": 8.49,
-    "imageUrl": [],
+    "imageUrl": ["https://cdn.semana.es/wp-content/uploads/2021/02/destacada-20.jpg"],
     "category": "Legumbres",
-    "features": "Mezcla de garbanzos, lentejas y frijoles negros, Cultivadas de manera orgánica y sostenible."
+    "features": "Mezcla de garbanzos, lentejas y frijoles negros, cultivadas de manera orgánica y sostenible."
   },
   {
     "name": "Harina de Garbanzo",
     "description": "Harina fina y nutritiva hecha de garbanzos, perfecta para recetas sin gluten.",
     "price": 4.99,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Legumbres",
-    "features": "Alta en proteínas para una opción saludable, Sin gluten para dietas sin gluten, Ideal para panificación."
+    "features": "Alta en proteínas para una opción saludable, sin gluten. Ideal para panificados."
   },
   {
-    "name": "Frijoles Negros en Conserva",
-    "description": "Frijoles negros cocidos y listos para usar en ensaladas, sopas y guisos.",
+    "name": "Frijoles en Conserva",
+    "description": "Frijoles cocidos y listos para usar en ensaladas, sopas y guisos.",
     "price": 2.79,
-    "imageUrl": [],
+    "imageUrl": ["https://i0.wp.com/cleangreensimple.com/wp-content/uploads/canned-red-kidney-beans.jpg?resize=840%2C556&ssl=1"],
     "category": "Legumbres",
-    "features": "Listos para consumir, Alta en fibra para la digestión, Sin conservantes artificiales."
+    "features": "Listos para consumir, alto en fibra para la digestión. Sin conservantes artificiales."
   },
   {
     "name": "Lentejas Rojas Secas",
     "description": "Lentejas rojas secas, ricas en proteínas y fáciles de cocinar.",
     "price": 3.29,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1624564529789-e9d219b826d5?q=80&w=846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Legumbres",
-    "features": "Cocción rápida para mayor comodidad, Alta en hierro para la salud, Versátil en diversas recetas."
+    "features": "Cocción rápida para mayor comodidad, alta en hierro para la salud, versátil en diversas recetas."
   },
   {
     "name": "Infusión de Manzanilla",
     "description": "Mezcla de manzanilla de alta calidad para una infusión relajante y reconfortante.",
     "price": 3.49,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1596343621063-c7a7aaf37aa6?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Infusiones",
-    "features": "Manzanilla orgánica para una experiencia natural, Sin cafeína para relajación, Calidad premium en cada bolsita."
+    "features": "Manzanilla orgánica para una experiencia natural. Sin cafeína para relajación. Calidad premium en cada bolsita."
   },
   {
     "name": "Té Verde Antioxidante",
     "description": "Té verde con propiedades antioxidantes y estimulantes, perfecto para cualquier momento del día.",
     "price": 5.99,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1576092762793-c0e9395ec4b9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Infusiones",
-    "features": "Hoja entera para un sabor auténtico, Alto contenido de antioxidantes, Refrescante y revitalizante."
+    "features": "Hoja entera para un sabor auténtico, alto contenido de antioxidantes, refrescante y revitalizante."
   },
   {
     "name": "Infusión de Hierbabuena",
     "description": "Mezcla de hierbabuena fresca para una infusión revitalizante y digestiva.",
     "price": 4.49,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1498481548071-4d439c62cd6e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Infusiones",
-    "features": "Hierbabuena natural para un sabor puro, Digestiva para después de las comidas, Aromática y reconfortante."
+    "features": "Hierbabuena natural para un sabor puro, digestiva para después de las comidas, aromática y reconfortante."
   },
   {
     "name": "Té de Cúrcuma y Jengibre",
     "description": "Té herbal con cúrcuma y jengibre, conocido por sus propiedades antiinflamatorias.",
     "price": 6.99,
-    "imageUrl": [],
+    "imageUrl": ["https://images.unsplash.com/photo-1603404235499-88032f0ae24a?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "Infusiones",
-    "features": "Cúrcuma y jengibre para beneficios antiinflamatorios, Sin cafeína para relajación, Bienestar digestivo."
+    "features": "Cúrcuma y jengibre para beneficios antiinflamatorios, sin cafeína para relajación, bienestar digestivo."
   }
 ]
