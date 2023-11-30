@@ -1,20 +1,10 @@
-/* const productSchema = require('../models/products')
-
-const getAllProducts = (req, res) => {
-  productSchema.find().then((data) => res.json(data)).catch((error) => res.json({ message: error }))
-}
-
-module.exports = {
-  getAllProducts
-} */
-
 const productSchema = require('../models/products')
 
 const getAllProducts = async (req, res) => {
   try {
     // Paginación
     const page = parseInt(req.query.page) || 1
-    const limit = parseInt(req.query.limit) || 10
+    const limit = parseInt(req.query.limit) || 5
 
     // Filtrado
     const search = req.query.search
@@ -30,11 +20,17 @@ const getAllProducts = async (req, res) => {
     const filter = {}
 
     if (search) {
-      filter.$or = [{ name: { $regex: search, $options: 'i' } }, { category: { $regex: search, $options: 'i' } }]
+      filter.$or = [
+        { name: { $regex: search, $options: 'i' } },
+        { categoria: { $regex: search, $options: 'i' } }
+      ]
     }
 
     if (category) {
-      filter.categoria = category
+      // Filtrar por categoría (en minúsculas para ser insensible a mayúsculas)
+      const categoriaLower = category.toLowerCase()
+      filter.categoria = categoriaLower
+      console.log('Categoria en minúsculas:', categoriaLower)
     }
 
     if (!isNaN(priceMin)) {
@@ -44,6 +40,8 @@ const getAllProducts = async (req, res) => {
     if (!isNaN(priceMax)) {
       filter.price = { ...filter.price, $lte: priceMax }
     }
+
+    console.log('Filtro:', filter)
 
     // Consultar la base de datos con paginación, filtro y orden
     const products = await productSchema
