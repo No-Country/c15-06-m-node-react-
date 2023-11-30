@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 const cookieParser = require('cookie-parser')
 require('dotenv').config()
 const userRoute = require('./src/routes/routes')
@@ -8,8 +9,11 @@ const app = express()
 const port = process.env.PORT || 3001
 
 // Middleware
+
 app.use(express.json())
 app.use(cookieParser())
+app.use(cors())
+
 
 // Routes
 app.use('/api', userRoute)
