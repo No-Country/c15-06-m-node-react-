@@ -7,9 +7,9 @@ import { Provider } from 'react-redux'
 import store from './redux/Store'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <React.Fragment>
     <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
-  </React.StrictMode>
+  </React.Fragment>
 )

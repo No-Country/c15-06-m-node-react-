@@ -9,8 +9,10 @@ export function CategoryBar() {
 
   return (
     <>
-      <nav className='h-16 w-full border-b border-gray-200 bg-white flex items-center p-10 justify-evenly'>
-        <Link to='/products'>Todos los Productos</Link>
+      <nav className='hideen md:flex h-16 w-full border-b border-gray-200 bg-white flex items-center p-10 justify-evenly'>
+        <Link to='/products' className='hidden md:block'>
+          Todos los Productos
+        </Link>
         {data?.map(category => (
           <CategoryItem key={category} category={category} />
         ))}
