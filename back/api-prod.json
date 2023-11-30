@@ -4,7 +4,7 @@
     "description": "Almendras crujientes y saludables, ricas en antioxidantes y grasas saludables.",
     "price": 5.99,
     "imageUrl":["https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Frutos secos y cereales",
+    "category": "frutos secos y cereales",
     "features": "Sin sal añadida, fuente de vitamina E."
   },
   {
@@ -12,7 +12,7 @@
     "description": "Avena integral orgánica, ideal para desayunos nutritivos y energéticos.",
     "price": 3.49,
     "imageUrl":["https://images.unsplash.com/photo-1586810504230-09dab6b8e01b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Frutos secos y cereales",
+    "category": "frutos secos y cereales",
     "features": "Alta en fibra, certificada orgánica."
   },
   {
@@ -20,7 +20,7 @@
     "description": "Pistachos tostados y salados, aperitivo sabroso y lleno de proteínas.",
     "price": 7.99,
     "imageUrl":["https://images.unsplash.com/photo-1598110996285-54523b72be93?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Frutos secos y cereales",
+    "category": "frutos secos y cereales",
     "features": "Rico en proteínas, fuente de ácidos grasos saludables."
   },
   {
@@ -28,7 +28,7 @@
     "description": "Quinoa orgánica, fuente completa de proteínas y fácil de incorporar en comidas.",
     "price": 6.99,
     "imageUrl":["https://images.unsplash.com/photo-1590616270818-f08142f85c6b?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Frutos Secos y Cereales",
+    "category": "frutos secos y Cereales",
     "features": "Certificada orgánica, sin gluten."
   },
   {
@@ -36,7 +36,7 @@
     "description": "Albahaca fresca y fragante, ideal para realzar el sabor de platos italianos.",
     "price": 2.99,
     "imageUrl":["https://images.unsplash.com/photo-1629157247277-48f870757026?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Hierbas y Especias",
+    "category": "hierbas y especias",
     "features": "Orgánica, cultivada localmente."
   },
   {
@@ -44,7 +44,7 @@
     "description": "Cúrcuma en polvo, especia antiinflamatoria con un toque terroso.",
     "price": 3.49,
     "imageUrl":["https://images.unsplash.com/photo-1598712586188-27853d8ccf0a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Hierbas y Especias",
+    "category": "hierbas y especias",
     "features": "Rico en curcumina, sin aditivos."
   },
   {
@@ -52,7 +52,7 @@
     "description": "Orégano seco, esencial para pizzas y platos mediterráneos.",
     "price": 1.99,
     "imageUrl": ["https://st2.depositphotos.com/1006009/6600/i/450/depositphotos_66001421-stock-photo-oregano-leaf.jpg"],
-    "category": "Hierbas y Especias",
+    "category": "hierbas y especias",
     "features": "Aroma intenso, recolectado a mano."
   },
   {
@@ -60,7 +60,7 @@
     "description": "Granos de pimienta negra, aporta un sabor robusto a tus platos.",
     "price": 4.99,
     "imageUrl": ["https://images.unsplash.com/photo-1585138977386-373519e28a3c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Hierbas y Especias",
+    "category": "hierbas y especias",
     "features": "Molinillo incorporado, frescura garantizada."
   },
   {
@@ -68,7 +68,7 @@
     "description": "Una opción deliciosa y saludable para disfrutar en tus comidas sin carne.",
     "price": 3.79,
     "imageUrl": ["https://scontent.faep1-1.fna.fbcdn.net/v/t1.6435-9/93058000_602105960385240_9160199342877835264_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c2f564&_nc_ohc=wNXL3ncGd6sAX-omjum&_nc_ht=scontent.faep1-1.fna&oh=00_AfCYzoxxLiITUZMqtpJhCDv-7dYSZ1b8jF8IqwNYUJY-Pw&oe=658FEC2F"],
-    "category": "Proteicos",
+    "category": "proteicos",
     "features": "Fuente de proteínas y fibra. Textura jugosa y sabor equilibrado. Sin ingredientes artificiales."
   },
   {
@@ -76,7 +76,7 @@
     "description": "Barrita energética con proteínas vegetales, ideal para snacks saludables.",
     "price": 2.99,
     "imageUrl": ["https://images.unsplash.com/photo-1633360821154-1935fb5671e6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Proteicos",
+    "category": "proteicos",
     "features": "Proteína de almendra para un impulso de energía, baja en azúcares, sin gluten para dietas variadas."
   },
   {
@@ -84,7 +84,7 @@
     "description": "Producto deshidratado de soja con textura similar a la carne. Ideal para platos vegetarianos.",
     "price": 3.99,
     "imageUrl": ["https://images.ecestaticos.com/-HsmqZ519pPzdN_8qsRdMUj7qt8=/117x1:2003x1413/996x747/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F670%2F039%2F2c0%2F6700392c0a8838d53b58862cbabf92a6.jpg"],
-    "category": "Proteicos",
+    "category": "proteicos",
     "features": "Rica en proteínas, adaptable a diversas recetas culinarias gracias a su capacidad para absorber sabores. Baja en grasas saturadas y libre de colesterol."
   },
   {
@@ -92,15 +92,15 @@
     "description": "Leche de almendras enriquecida con vitaminas y minerales esenciales.",
     "price": 3.49,
     "imageUrl": ["https://images.unsplash.com/photo-1583507623011-5cc6ff99e11c?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Proteicos",
+    "category": "proteicos",
     "features": "Fortificada con calcio y vitamina D, baja en calorías para una opción ligera, sin lactosa para intolerantes."
   },
   {
-    "name": "Legumbres Mixtas Orgánicas",
+    "name": "legumbres Mixtas Orgánicas",
     "description": "Paquete de legumbres variadas, cultivadas de forma orgánica y sostenible.",
     "price": 8.49,
     "imageUrl": ["https://cdn.semana.es/wp-content/uploads/2021/02/destacada-20.jpg"],
-    "category": "Legumbres",
+    "category": "legumbres",
     "features": "Mezcla de garbanzos, lentejas y frijoles negros, cultivadas de manera orgánica y sostenible."
   },
   {
@@ -108,7 +108,7 @@
     "description": "Harina fina y nutritiva hecha de garbanzos, perfecta para recetas sin gluten.",
     "price": 4.99,
     "imageUrl": ["https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Legumbres",
+    "category": "legumbres",
     "features": "Alta en proteínas para una opción saludable, sin gluten. Ideal para panificados."
   },
   {
@@ -116,7 +116,7 @@
     "description": "Frijoles cocidos y listos para usar en ensaladas, sopas y guisos.",
     "price": 2.79,
     "imageUrl": ["https://i0.wp.com/cleangreensimple.com/wp-content/uploads/canned-red-kidney-beans.jpg?resize=840%2C556&ssl=1"],
-    "category": "Legumbres",
+    "category": "legumbres",
     "features": "Listos para consumir, alto en fibra para la digestión. Sin conservantes artificiales."
   },
   {
@@ -124,7 +124,7 @@
     "description": "Lentejas rojas secas, ricas en proteínas y fáciles de cocinar.",
     "price": 3.29,
     "imageUrl": ["https://images.unsplash.com/photo-1624564529789-e9d219b826d5?q=80&w=846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Legumbres",
+    "category": "legumbres",
     "features": "Cocción rápida para mayor comodidad, alta en hierro para la salud, versátil en diversas recetas."
   },
   {
@@ -132,7 +132,7 @@
     "description": "Mezcla de manzanilla de alta calidad para una infusión relajante y reconfortante.",
     "price": 3.49,
     "imageUrl": ["https://images.unsplash.com/photo-1596343621063-c7a7aaf37aa6?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Infusiones",
+    "category": "infusiones",
     "features": "Manzanilla orgánica para una experiencia natural. Sin cafeína para relajación. Calidad premium en cada bolsita."
   },
   {
@@ -140,7 +140,7 @@
     "description": "Té verde con propiedades antioxidantes y estimulantes, perfecto para cualquier momento del día.",
     "price": 5.99,
     "imageUrl": ["https://images.unsplash.com/photo-1576092762793-c0e9395ec4b9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Infusiones",
+    "category": "infusiones",
     "features": "Hoja entera para un sabor auténtico, alto contenido de antioxidantes, refrescante y revitalizante."
   },
   {
@@ -148,7 +148,7 @@
     "description": "Mezcla de hierbabuena fresca para una infusión revitalizante y digestiva.",
     "price": 4.49,
     "imageUrl": ["https://images.unsplash.com/photo-1498481548071-4d439c62cd6e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Infusiones",
+    "category": "infusiones",
     "features": "Hierbabuena natural para un sabor puro, digestiva para después de las comidas, aromática y reconfortante."
   },
   {
@@ -156,7 +156,7 @@
     "description": "Té herbal con cúrcuma y jengibre, conocido por sus propiedades antiinflamatorias.",
     "price": 6.99,
     "imageUrl": ["https://images.unsplash.com/photo-1603404235499-88032f0ae24a?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "category": "Infusiones",
+    "category": "infusiones",
     "features": "Cúrcuma y jengibre para beneficios antiinflamatorios, sin cafeína para relajación, bienestar digestivo."
   }
 ]
