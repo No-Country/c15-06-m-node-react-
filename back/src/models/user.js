@@ -17,9 +17,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: 'user'
   },
-  imageUrl: {
-    type: [String],
-    required: true
+  status: {
+    type: String,
+    default: 'active'
   },
   id: {
     type: String,

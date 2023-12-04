@@ -1,18 +1,22 @@
 const productSchema = require('../models/products')
 
 const createProduct = async (req, res) => {
-  const { name, description, price, categoria, imageUrl } = req.body
+  console.log('Role del usuario:', req.user.role)
+  if (req.user.role !== 'admin') {
+    return res.status(404).json({ error: 'Acceso no autorizado, se requiere ser administrador' })
+  }
+  const { name, description, price, categoria, imageUrl, status } = req.body
 
   // Validaciones
   const nameRegex = /^[a-zA-Z]+$/
   const categoryRegex = /^[a-zA-Z]+$/
   const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/
 
-  if (!name || !nameRegex.test(name) || name.length > 15) {
+  if (!name || !nameRegex.test(name) || name.length > 30) {
     return res.status(400).json({ error: 'Nombre inválido.' })
   }
 
-  if (!description || !nameRegex.test(description) || description.length > 30) {
+  if (!description || !nameRegex.test(description) || description.length > 100) {
     return res.status(400).json({ error: 'Descripción inválida.' })
   }
 
@@ -34,7 +38,8 @@ const createProduct = async (req, res) => {
       description,
       price,
       categoria,
-      imageUrl
+      imageUrl,
+      status: 'active'
     })
 
     const productSaved = await newProduct.save()
@@ -46,6 +51,7 @@ const createProduct = async (req, res) => {
       price: productSaved.price,
       categoria: productSaved.categoria,
       imageUrl: productSaved.imageUrl,
+      status: productSaved.status,
       createdAt: productSaved.createdAt
     })
   } catch (error) {
