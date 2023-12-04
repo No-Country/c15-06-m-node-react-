@@ -29,6 +29,10 @@ const productSchema = new mongoose.Schema({
   imageUrl: {
     type: [String],
     required: true
+  },
+  status: {
+    type: String,
+    default: 'active'
   }
 
 }, {
