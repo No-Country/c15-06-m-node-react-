@@ -7,7 +7,7 @@ const register = async (req, res) => {
   const { email, password, name, lastname, role } = req.body
 
   // Validaciones
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+\.com$/
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
   const passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/ // Mínimo 8 caracteres, al menos una letra y un número
 
