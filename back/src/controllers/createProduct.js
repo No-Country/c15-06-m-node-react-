@@ -5,7 +5,7 @@ const createProduct = async (req, res) => {
   if (req.user.role !== 'admin') {
     return res.status(404).json({ error: 'Acceso no autorizado, se requiere ser administrador' })
   }
-  const { name, description, price, categoria, imageUrl, status } = req.body
+  const { name, description, price, categoria, imageUrl } = req.body
 
   // Validaciones
   const nameRegex = /^[a-zA-Z]+$/
@@ -38,8 +38,7 @@ const createProduct = async (req, res) => {
       description,
       price,
       categoria,
-      imageUrl,
-      status: 'active'
+      imageUrl
     })
 
     const productSaved = await newProduct.save()
