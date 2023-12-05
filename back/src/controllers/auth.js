@@ -13,6 +13,7 @@ const register = async (req, res) => {
   if (!name || name.length > 30 || !/^[a-zA-Z]+$/.test(name)) {
     return res.status(400).json({ error: 'Nombre inválido.' })
   }
+  
 
   if (!email || !emailRegex.test(email)) {
     return res.status(400).json({ error: 'Correo electrónico inválido.' })
