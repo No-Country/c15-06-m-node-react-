@@ -10,23 +10,26 @@ const { createProduct } = require('../controllers/createProduct')
 const { updateProduct } = require('../controllers/updateProduct.js')
 const { login, register, logout, profile } = require('../controllers/auth.js')
 const { authRequired } = require('../middleware/validateToken.js')
+const { dashboardAdmin } = require('../controllers/dashboardAdmin.js')
 const router = express.Router()
 
 // Rutas usuarios
-router.post('/users', createUser)
-router.get('/users', getAllUsers)
-router.get('/users/:id', getUserById)
-router.put('/users/:id', updateUser)
+router.post('/users', authRequired, createUser)
+router.get('/users', authRequired, getAllUsers)
+router.get('/users/:id', authRequired, getUserById)
+router.put('/users/:id', authRequired, updateUser)
 // rutas productos
-router.post('/product', createProduct)
+router.post('/product', authRequired, createProduct)
 router.get('/product', getAllProducts)
 router.get('/product/category/:categoria', getProductsByCategory)
 router.get('/product/:id', getProductById)
-router.put('/product/:id', updateProduct)
+router.put('/product/:id', authRequired, updateProduct)
 // session
 router.post('/register', register)
 router.post('/login', login)
 router.post('/logout', logout)
 router.get('/profile', authRequired, profile)
+// admin
+router.get('/admin', authRequired, dashboardAdmin)
 
 module.exports = router

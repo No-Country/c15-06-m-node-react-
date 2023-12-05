@@ -1,29 +1,60 @@
 const userSchema = require('../models/user')
 const bcrypt = require('bcryptjs')
 const { createAccessToken } = require('../libs/jwt')
+const { TOKEN_SECRET } = require('../../config.js')
 
 const register = async (req, res) => {
-  const { email, password, name } = req.body
+  const { email, password, name, role } = req.body
+
+  // Validaciones
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/ // Mínimo 8 caracteres, al menos una letra mayúscula, una letra minúscula y un número
+
+  if (!name || name.length > 30 || !/^[a-zA-Z]+$/.test(name)) {
+    return res.status(400).json({ error: 'Nombre inválido.' })
+  }
+
+  if (!email || !emailRegex.test(email)) {
+    return res.status(400).json({ error: 'Correo electrónico inválido.' })
+  }
+
+  if (!password || !passwordRegex.test(password)) {
+    return res.status(400).json({ error: 'Contraseña inválida. Debe contener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número.' })
+  }
 
   try {
-    const passwordHash = await bcrypt.hash(password, 10)// para encriptar la contraseña
+    const userExists = await userSchema.findOne({ email })
+
+    if (userExists) {
+      return res.status(400).json({ error: 'El correo electrónico ya está registrado.' })
+    }
+
+    const passwordHash = await bcrypt.hash(password, 10)
     const newUser = new userSchema({
       name,
       email,
-      password: passwordHash
+      password: passwordHash,
+      role: role || 'user',
+      status: 'active'
     })
-    const userSaved = await newUser.save()// aca se guarda el user
-    const token = await createAccessToken({ id: userSaved._id })// aca se crea el token
-    res.cookie('token', token)// aca el token se guarda en una cookie
-    // devuelve la respuesta del usuario al front
+
+    const userSaved = await newUser.save()
+    const token = await createAccessToken({ id: userSaved._id, role: userSaved.role }, TOKEN_SECRET, { expiresIn: '1h' })
+    console.log('usuario salvado', userSaved)
+    console.log('Token generado:', token)
+
+    res.cookie('token', token)
+
     res.json({
       id: userSaved._id,
       username: userSaved.name,
       email: userSaved.email,
+      status: userSaved.status,
       createdAt: userSaved.createdAt
     })
   } catch (error) {
-    res.status(500).json({ message: error.message })
+    console.log(error)
+    res.status(500).json({ error: 'Error al registrar el usuario.' })
   }
 }
 
@@ -35,14 +66,19 @@ const login = async (req, res) => {
 
     if (!userFound) return res.status(400).json({ message: 'Usuario no encontrado' })
 
-    const isMatch = await bcrypt.compare(password, userFound.password)// valida que el usuarrio exista
+    // Verificar el estado del usuario
+    if (userFound.status === 'inactive') {
+      return res.status(401).json({ message: 'Su cuenta ha sido desactivada. Comuníquese con soporte. mailsoporte@.com' })
+    }
 
-    if (!isMatch) return res.status(400).json({ message: 'incorrect password' })
+    const isMatch = await bcrypt.compare(password, userFound.password)
 
-    const token = await createAccessToken({ id: userFound._id })// aca se crea el token con el usuario encontrado
+    if (!isMatch) return res.status(400).json({ message: 'Contraseña incorrecta' })
 
-    res.cookie('token', token)// aca el token se guarda en una cookie
-    // devuelve la respuesta del usuario al front
+    const token = await createAccessToken({ id: userFound._id, role: userFound.role }, TOKEN_SECRET, { expiresIn: '1h' })
+
+    res.cookie('token', token)
+
     res.json({
       id: userFound._id,
       username: userFound.name,
