@@ -1,10 +1,14 @@
 const userSchema = require('../models/user')
 
 const createUser = async (req, res) => {
-  const { email, password, name, role } = req.body
+  if (req.user.role !== 'admin') {
+    return res.status(403).json({ error: 'Acceso no autorizado, se requiere ser administrador' })
+  }
+  const { email, password, name, role, lastname } = req.body
 
   // Validaciones
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  const emailRegex = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/
+  
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/ // Mínimo 8 caracteres, al menos una letra mayúscula, una letra minúscula y un número
 
   if (!name || name.length > 30 || !/^[a-zA-Z]+$/.test(name)) {
@@ -28,6 +32,7 @@ const createUser = async (req, res) => {
 
     const newUser = new userSchema({
       name,
+      lastname,
       email,
       password,
       role: role || 'user',
@@ -39,6 +44,7 @@ const createUser = async (req, res) => {
     res.json({
       id: userSaved._id,
       username: userSaved.name,
+      lastname: userSaved.lastname,
       email: userSaved.email,
       status: userSaved.status,
       createdAt: userSaved.createdAt
