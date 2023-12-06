@@ -5,6 +5,7 @@ import { NotFound } from '../pages/NotFound'
 import { Error } from '../pages/Error'
 import { Products } from '../pages/Products'
 import { CategoryPage } from '../pages/CategoryPage'
+import { Product } from '../pages/Product'
 
 export const router = createBrowserRouter([
   {
@@ -24,7 +25,12 @@ export const router = createBrowserRouter([
         errorElement: <Error />,
       },
       {
-        path: '/category/:category',
+        path: '/product/:id',
+        element: <Product />,
+        errorElement: <Error />,
+      },
+      {
+        path: '/products/category/:category',
         element: <CategoryPage />,
         errorElement: <Error />,
       },

@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
 
 export function useGetData(url, change) {
-  const [data, setData] = useState(null)
+  const [data, setData] = useState()
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(null)
-
-  const urlTest = 'https://fakestoreapi.com/products'
 
   useEffect(() => {
     setLoading(true)
