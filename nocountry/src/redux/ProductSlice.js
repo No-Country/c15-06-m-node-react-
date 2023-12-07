@@ -1,11 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
+  _id: '',
   name: '',
-  productID: '',
   description: '',
+  categoria: '',
   price: 0,
   imageUrl: [],
+  status: '',
 }
 
 export const userSlice = createSlice({
@@ -13,30 +15,21 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     setProduct: (state, action) => {
+      state._id = action.payload._id
       state.name = action.payload.name
-      state.productID = action.payload.productID
       state.description = action.payload.description
+      state.categoria = action.payload.categoria
       state.price = action.payload.price
       state.imageUrl = action.payload.imageUrl
     },
     deleteProduct: (state, action) => {
+      state._id = ''
       state.name = ''
-      state.productID = ''
+      state.categoria = ''
       state.description = ''
       state.price = 0
       state.imageUrl = []
-    },
-    changeName: (state, action) => {
-      state.name = action.payload
-    },
-    changePrice: (state, action) => {
-      state.price = action.payload
-    },
-    changeDescription: (state, action) => {
-      state.description = action.payload
-    },
-    changeImageUrl: (state, action) => {
-      state.imageUrl = action.payload
+      state.status = ''
     },
   },
 })

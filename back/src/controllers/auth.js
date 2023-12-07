@@ -4,14 +4,19 @@ const { createAccessToken } = require('../libs/jwt')
 const { TOKEN_SECRET } = require('../../config.js')
 
 const register = async (req, res) => {
-  const { email, password, name, role } = req.body
+  const { email, password, name, lastname, role } = req.body
 
   // Validaciones
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/ // Mínimo 8 caracteres, al menos una letra mayúscula, una letra minúscula y un número
+  const emailRegex = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/
 
-  if (!name || name.length > 30 || !/^[a-zA-Z]+$/.test(name)) {
-    return res.status(400).json({ error: 'Nombre inválido.' })
+  const passwordRegex = /^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/ // Mínimo 8 caracteres, al menos una letra y un número
+
+  if (!name || !/^[a-zA-Z]+$/.test(name) || name.length > 10) {
+    return res.status(400).json({ error: 'Nombre inválido. Debe contener letras y no superar los 10 caracteres.' })
+  }
+
+  if (lastname && (lastname.length > 10 || !/^[a-zA-Z]+$/.test(lastname))) {
+    return res.status(400).json({ error: 'Apellido inválido. Debe contener letras y no superar los 10 caracteres.' })
   }
 
   if (!email || !emailRegex.test(email)) {
@@ -19,7 +24,7 @@ const register = async (req, res) => {
   }
 
   if (!password || !passwordRegex.test(password)) {
-    return res.status(400).json({ error: 'Contraseña inválida. Debe contener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número.' })
+    return res.status(400).json({ error: 'Contraseña inválida. Debe contener al menos 8 caracteres, una letra y un número.' })
   }
 
   try {
@@ -32,6 +37,7 @@ const register = async (req, res) => {
     const passwordHash = await bcrypt.hash(password, 10)
     const newUser = new userSchema({
       name,
+      lastname,
       email,
       password: passwordHash,
       role: role || 'user',
@@ -40,14 +46,13 @@ const register = async (req, res) => {
 
     const userSaved = await newUser.save()
     const token = await createAccessToken({ id: userSaved._id, role: userSaved.role }, TOKEN_SECRET, { expiresIn: '1h' })
-    console.log('usuario salvado', userSaved)
-    console.log('Token generado:', token)
 
     res.cookie('token', token)
 
     res.json({
       id: userSaved._id,
       username: userSaved.name,
+      lastname: userSaved.lastname,
       email: userSaved.email,
       status: userSaved.status,
       createdAt: userSaved.createdAt
@@ -82,6 +87,7 @@ const login = async (req, res) => {
     res.json({
       id: userFound._id,
       username: userFound.name,
+      lastname: userFound.lastname,
       email: userFound.email,
       createdAt: userFound.createdAt
     })
@@ -105,6 +111,7 @@ const profile = async (req, res) => {
   return res.json({
     id: userFound._id,
     username: userFound.name,
+    lastname: userFound.lastname,
     email: userFound.email,
     createdAt: userFound.createdAt,
     updatedAt: userFound.updatedAt

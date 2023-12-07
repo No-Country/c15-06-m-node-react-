@@ -1,15 +1,16 @@
-import { useState, useEffect } from 'react'
 import { useGetData } from '../hooks/useGetData'
 import { ProductCard } from '../components/ProductCard'
 import { useParams } from 'react-router-dom'
 import { CategoryHeader } from '../components/CategoryHeader'
 import { Loading } from '../layouts/Loading'
+import { deleteSpaces } from '../util/Utilities'
 
 export function CategoryPage() {
   const { category } = useParams()
-  const urlTest = `https://fakestoreapi.com/products/category/${category}`
+  const categoryFormat = deleteSpaces(category)
+  const URL = `/product/category/${categoryFormat}`
 
-  const { data, error, loading } = useGetData(urlTest, category)
+  const { data, error, loading } = useGetData(URL, category)
 
   return (
     <>
@@ -17,11 +18,12 @@ export function CategoryPage() {
       {loading && <Loading />}
       {error && <p>{error}</p>}
       <ul className='grid grid-cols-autoColums justify-center items-center px-10 gap-5 md:gap-20 md:px-24 md:py-10'>
-        {data?.map(product => (
-          <li key={product.id}>
-            <ProductCard product={product} />
-          </li>
-        ))}
+        {data &&
+          data?.map(product => (
+            <li key={product._id}>
+              <ProductCard product={product} key={product._id} />
+            </li>
+          ))}
       </ul>
     </>
   )

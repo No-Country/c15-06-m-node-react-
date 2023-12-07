@@ -4,7 +4,7 @@ export function CategoryItem({ category }) {
   return (
     <>
       <Link
-        to={`/category/${category}`}
+        to={`/products/category/${category}`}
         className='hover:underline hidden md:block'>
         {category}
       </Link>

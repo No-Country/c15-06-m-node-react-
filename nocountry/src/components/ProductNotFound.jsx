@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom'
 
-export function Error() {
+export function ProductNotFound() {
   return (
     <div className='flex flex-col items-center justify-center h-screen bg-gray-100'>
-      <h1 className='text-4xl font-bold text-gray-800 mb-4'>Error</h1>
-      <p className='text-gray-600'>
-        Lo sentimos, ha ocurrido un error inesperado.
-      </p>
+      <h1 className='text-4xl font-bold text-gray-800 mb-4'>Error 404</h1>
+      <p className='text-gray-600'>Producto no encontrado.</p>
 
       <Link
         to='/'
