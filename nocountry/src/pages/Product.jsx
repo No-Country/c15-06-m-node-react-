@@ -7,7 +7,7 @@ import { ProductDescription } from '../components/ProductDescription'
 export function Product() {
   const { id } = useParams()
 
-  const URL = `${import.meta.env.VITE_BACKEND_URL}/product/${id}`
+  const URL = `/product/${id}`
   const { data, error, loading } = useGetData(URL, id)
 
   return (

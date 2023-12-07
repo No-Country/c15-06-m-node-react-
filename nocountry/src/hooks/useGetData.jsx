@@ -5,9 +5,11 @@ export function useGetData(url, change) {
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(null)
 
+  const Url = `${import.meta.env.VITE_BACKEND_URL}${url}`
+
   useEffect(() => {
     setLoading(true)
-    fetch(url, {
+    fetch(Url, {
       method: 'GET',
     })
       .then(res => res.json())

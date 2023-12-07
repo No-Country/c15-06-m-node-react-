@@ -3,14 +3,12 @@ import { ProductCard } from '../components/ProductCard'
 import { useParams } from 'react-router-dom'
 import { CategoryHeader } from '../components/CategoryHeader'
 import { Loading } from '../layouts/Loading'
-import { ProductNotFound } from '../components/ProductNotFound'
+import { deleteSpaces } from '../util/Utilities'
 
 export function CategoryPage() {
   const { category } = useParams()
-  const categoryFormat = category.replace(/\s/g, '')
-  const URL = `${
-    import.meta.env.VITE_BACKEND_URL
-  }/product/category/${categoryFormat}`
+  const categoryFormat = deleteSpaces(category)
+  const URL = `/product/category/${categoryFormat}`
 
   const { data, error, loading } = useGetData(URL, category)
 

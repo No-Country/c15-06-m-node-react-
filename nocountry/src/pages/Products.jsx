@@ -5,7 +5,7 @@ import { CategoryHeader } from '../components/CategoryHeader'
 import { Loading } from '../layouts/Loading'
 
 export function Products() {
-  const URL = `${import.meta.env.VITE_BACKEND_URL}/product`
+  const URL = `/product`
 
   const { data, error, loading } = useGetData(URL)
 
