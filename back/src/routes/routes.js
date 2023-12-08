@@ -11,6 +11,10 @@ const { updateProduct } = require('../controllers/updateProduct.js')
 const { login, register, logout, profile } = require('../controllers/auth.js')
 const { authRequired } = require('../middleware/validateToken.js')
 const { dashboardAdmin } = require('../controllers/dashboardAdmin.js')
+const { getProductCart } = require('../controllers/getProductCart.js')
+const { addProductCart } = require('../controllers/addProductCart.js')
+const { updateProductCart } = require('../controllers/updateProductCart.js')
+const { deleteProductCart } = require('../controllers/deleteProductCart.js')
 const router = express.Router()
 
 // Rutas usuarios
@@ -31,5 +35,10 @@ router.post('/logout', logout)
 router.get('/profile', authRequired, profile)
 // admin
 router.get('/admin', authRequired, dashboardAdmin)
+// carrito de compras
+router.get('/cart', getProductCart)
+router.post('/cartproduct', addProductCart)
+router.put('/cartproduct/:id', updateProductCart)
+router.delete('/cartproduct/:id', deleteProductCart)
 
 module.exports = router
