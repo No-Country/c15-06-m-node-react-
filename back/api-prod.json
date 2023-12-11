@@ -158,5 +158,37 @@
     "imageUrl": ["https://images.unsplash.com/photo-1603404235499-88032f0ae24a?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
     "category": "infusiones",
     "features": "Cúrcuma y jengibre para beneficios antiinflamatorios, sin cafeína para relajación, bienestar digestivo."
+  },
+  {
+    "name": "Alimento orgánico para perros",
+    "description": "Comida deshidratada para perros Barf con ingredientes naturales y frescos que aportan un gran sabor y beneficios para la salud.",
+    "price": 18.99,
+    "imageUrl": ["https://www.benydog.com/wp-content/uploads/2021/10/photo_2021-10-08_12-26-59.jpg"],
+    "category": "Mascotas",
+    "features": "Elaborada con carne de res, pollo, pescado y una mezcla de frutas y verduras para ofrecer una experiencia sabrosa y nutritiva."
+  },
+  {
+    "name": "Snacks saludables para perros",
+    "description": "Piel y pelaje más saludables, limpieza del sarro dental, mejora en la digestión, protección celular y aporte natural de nutrientes.",
+    "price": 5.49,
+    "imageUrl": ["https://www.benydog.com/wp-content/uploads/2021/02/premios-naturales-para-perros-dogift-articulaciones-fuertes.jpg "],
+    "category": "Mascotas",
+    "features": "Ingredientes ricos en vitaminas y minerales con propiedades antioxidantes. Ofrecen un efecto antiinflamatorio para aliviar dolores osteoarticulares y son auxiliares en la formación de colágeno natural."
+  },
+  {
+    "name": "Shampoo para perros",
+    "description": "Shampoo para perros de 250 ml BIO, ideal para piel delicada. Limpia, evita nudos, alivia irritaciones, y favorece la hidratación. Con extracto de Mangostán, antimicrobiano y calmante. Seguro al lamer, libre de tóxicos.",
+    "price": 9.99,
+    "imageUrl": ["https://shopbio.es/728-large_default/biocenter-champu-natural-para-perros-ecologico-y-vegano.jpg"],
+    "category": "Mascotas",
+    "features": "Limpieza sin nudos, alivio de irritaciones, hidratación. Extracto de Mangostán antimicrobiano y calmante."
+  },
+  {
+    "name": "Juguete para perros ecológico",
+    "description": "Divierte a tu peludo amigo de manera sostenible con nuestro juguete para perros ecológico. Diseñado para horas de entretenimiento, es amigable con el medio ambiente y seguro para tu mascota.",
+    "price": 12.99,
+    "imageUrl": ["https://m.media-amazon.com/images/I/51Sjlj-kymL._AC_SX679_.jpg"],
+    "category": "Mascotas",
+    "features": "Juguete resistente y ecológico para perros. Proporciona diversión duradera. Fabricado con materiales sostenibles y seguros para tu mascota"
   }
 ]
