@@ -1,5 +1,12 @@
 import { useEffect, useState } from 'react'
 
+/**
+ * A hook that fetches data from the specified URL.
+ *
+ * @param {string} url - The URL to fetch data from.
+ * @param {any} change - A value that triggers a re-fetch when it changes.
+ * @return {object} An object containing the fetched data, any errors that occurred, and a loading state.
+ */
 export function useGetData(url, change) {
   const [data, setData] = useState()
   const [error, setError] = useState(null)

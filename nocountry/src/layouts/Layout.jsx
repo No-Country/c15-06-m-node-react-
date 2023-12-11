@@ -7,7 +7,7 @@ export function Layout() {
     <>
       <Header />
       <CategoryBar />
-      <section>
+      <section className='relative'>
         <Outlet />
       </section>
     </>

@@ -18,18 +18,7 @@ export function ProductDescription({ product }) {
           <h1 className='text-4xl font-medium md:self-end md:mr-20 self-center'>
             {product.name}
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
-            culpa veniam quam laborum maxime ex illo a non tempora accusamus,
-            dignissimos, soluta rem et at voluptatibus sed, molestiae facilis
-            debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Voluptatum culpa veniam quam laborum maxime ex illo a non tempora
-            accusamus, dignissimos, soluta rem et at voluptatibus sed, molestiae
-            facilis debitis. Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Voluptatum culpa veniam quam laborum maxime ex illo a non
-            tempora accusamus, dignissimos, soluta rem et at voluptatibus sed,
-            molestiae facilis debitis.
-          </p>
+          <p>{product.description}</p>
           <p className='text-3xl'>${product.price}</p>
         </section>
       </article>

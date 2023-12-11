@@ -42,21 +42,21 @@ export const router = createBrowserRouter([
         element: <NotFound />,
         errorElement: <Error />,
       },
-    ],
-  },
-  {
-    path: '/user',
-    element: <UserLayout />,
-    children: [
       {
-        path: 'login',
-        element: <Login />,
-        errorElement: <Error />,
-      },
-      {
-        path: 'register',
-        element: <Register />,
-        errorElement: <Error />,
+        path: '/user',
+        element: <UserLayout />,
+        children: [
+          {
+            path: 'login',
+            element: <Login />,
+            errorElement: <Error />,
+          },
+          {
+            path: 'register',
+            element: <Register />,
+            errorElement: <Error />,
+          },
+        ],
       },
     ],
   },

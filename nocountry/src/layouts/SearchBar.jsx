@@ -1,6 +1,16 @@
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { setSearchTerm } from '../redux/SearchSlice'
 import { SearchIcon } from '../assets/icons/Icons'
 
 export function SearchBar({ ...props }) {
+  const dispatch = useDispatch()
+  const searchTerm = useSelector(state => state.search.searchTerm)
+
+  const handleChange = e => {
+    dispatch(setSearchTerm(e.target.value))
+  }
+
   return (
     <>
       <label className='relative block w-4/12'>
@@ -13,6 +23,8 @@ export function SearchBar({ ...props }) {
           placeholder='Buscar...'
           type='text'
           name='search'
+          onChange={handleChange}
+          value={searchTerm}
           {...props}
         />
       </label>
