@@ -5,10 +5,11 @@ const updateUser = (req, res) => {
     return res.status(403).json({ error: 'Acceso no autorizado, se requiere ser administrador' })
   }
   const { id } = req.params
-  const { name, email, password, status } = req.body
+  const { name, lastname, email, password, status } = req.body
+
 
   userSchema
-    .updateOne({ _id: id }, { $set: { name, email, password, status } })
+    .updateOne({ _id: id }, { $set: { name, lastname, email, password, status } })
     .then((data) => {
       if (data.n === 0) {
         return res.status(404).json({ error: 'Usuario no encontrado' })
