@@ -1,7 +1,6 @@
-import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
-export function UserLayout() {
+export function UserLayout({ children }) {
   return (
     <main className='flex h-screen'>
       <section className='w-1/2 pt-20 flex justify-center '>
@@ -9,9 +8,7 @@ export function UserLayout() {
           EcoVida Store
         </Link>
       </section>
-      <section className='w-1/2 h-full'>
-        <Outlet />
-      </section>
+      <section className='w-1/2 h-full'>{children}</section>
     </main>
   )
 }

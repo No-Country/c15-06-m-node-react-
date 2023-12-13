@@ -10,9 +10,7 @@ export function Layout() {
   return (
     <>
       <div
-        className={
-          path === '/user/login' || path === '/user/register' ? 'hidden' : ''
-        }>
+        className={path === '/login' || path === '/register' ? 'hidden' : ''}>
         <Header />
         <CategoryBar />
       </div>
