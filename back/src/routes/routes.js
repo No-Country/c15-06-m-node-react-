@@ -17,6 +17,7 @@ const { updateProductCart } = require('../controllers/updateProductCart.js')
 const { deleteProductCart } = require('../controllers/deleteProductCart.js')
 const { deleteUser } = require('../controllers/deleteUser.js')
 const { deleteProduct } = require('../controllers/deleteProduct.js')
+const {payment} = require('../controllers/payment.js')
 const router = express.Router()
 
 // Rutas usuarios
@@ -45,4 +46,6 @@ router.post('/cartproduct', authRequired, addProductCart)
 router.put('/cartproduct/:id', authRequired, updateProductCart)
 router.delete('/cartproduct/:id', authRequired, deleteProductCart)
 
+//pay
+router.get('/payment')
 module.exports = router
