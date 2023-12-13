@@ -8,14 +8,9 @@ import { useState, useEffect } from 'react'
  * @return {Array} - The filtered array of products.
  */
 export function useProductSearch(searchData, searchTerm) {
-  const [filteredData, setFilteredData] = useState([])
+  const filteredItems = searchData.filter(product =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  )
 
-  useEffect(() => {
-    const filteredItems = searchData.filter(product =>
-      product.name.toLowerCase().includes(searchTerm.toLowerCase())
-    )
-    setFilteredData(filteredItems)
-  }, [searchData, searchTerm])
-
-  return filteredData
+  return filteredItems
 }

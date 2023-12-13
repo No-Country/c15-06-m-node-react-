@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { usePostData } from '../hooks/usePostData'
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-import { LoginButton } from './GoogleAuth'
+import { GoogleButton } from './GoogleButton'
 
 export function Login() {
   const [response, setResponse] = useState(null)
+  const Navigate = useNavigate()
 
   const {
     register,
@@ -15,11 +16,19 @@ export function Login() {
   } = useForm()
 
   async function submit(data) {
+    const { name, email, password } = data
+
     const serverResponse = await usePostData({
-      data,
+      data: {
+        name,
+        email,
+        password,
+      },
       url: '/login',
       options: {},
     })
+
+    console.log(serverResponse)
     setResponse(serverResponse)
 
     if (!response.message) {
@@ -43,7 +52,7 @@ export function Login() {
     <div className='border rounded-l-[80px] p-4 flex flex-col  items-center h-full shadow-default pt-32'>
       <h2 className='text-4xl font-bold py-10'>Login</h2>
 
-      <LoginButton />
+      <GoogleButton to={`${import.meta.env.VITE_BACKEND_URL}/auth/google`} />
 
       <p className='text-neutral-500 py-8 '>Inicia sesión con tu correo</p>
       {response && (

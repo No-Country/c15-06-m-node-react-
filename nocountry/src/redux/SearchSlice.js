@@ -5,6 +5,7 @@ const searchSlice = createSlice({
   initialState: {
     searchTerm: '',
     filteredItems: [],
+    searchData: [],
   },
   reducers: {
     setSearchTerm: (state, action) => {
@@ -16,8 +17,17 @@ const searchSlice = createSlice({
         item.toLowerCase().includes(searchTerm.toLowerCase())
       )
     },
+
+    setSearchData: (state, action) => {
+      state.searchData = action.payload
+    },
+
+    setClear: (state, action) => {
+      state.searchTerm = ''
+    },
   },
 })
 
-export const { setSearchTerm, filterItems } = searchSlice.actions
+export const { setSearchTerm, filterItems, setSearchData, setClear } =
+  searchSlice.actions
 export default searchSlice.reducer

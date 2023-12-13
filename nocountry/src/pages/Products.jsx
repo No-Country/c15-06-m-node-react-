@@ -2,24 +2,31 @@ import { useGetData } from '../hooks/useGetData'
 import { ProductCard } from '../components/ProductCard'
 import { CategoryHeader } from '../components/CategoryHeader'
 import { Loading } from '../layouts/Loading'
-import { useSelector } from 'react-redux'
-import { useProductSearch } from '../hooks/useSearchProduct'
-import { useEffect, useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setClear } from '../redux/SearchSlice'
+import { useState } from 'react'
+import { Pagination } from '../components/Pagination'
+import { useEffect } from 'react'
 
 export function Products() {
-  const [searchData, setSearchData] = useState([])
-  const { searchTerm } = useSelector(state => state.search)
+  const [actualPage, setActualPage] = useState(1)
+  const [totalPages, setTotalPages] = useState(0)
 
-  const URL = `/product`
-  const { data, error, loading } = useGetData(URL)
+  const dispatch = useDispatch()
+
+  const endPoint = `/product`
+  const URL = `${endPoint}?page=${actualPage}`
+  const { data, error, loading } = useGetData(URL, actualPage)
 
   useEffect(() => {
     if (data) {
-      setSearchData(data.products)
+      setTotalPages(data.totalPages)
     }
   }, [data])
 
-  const filteredData = useProductSearch(searchData, searchTerm)
+  useEffect(() => {
+    dispatch(setClear())
+  }, [])
 
   return (
     <>
@@ -27,13 +34,18 @@ export function Products() {
       {error && <p>{error}</p>}
       <CategoryHeader category='Todos los Productos' />
 
-      <ul className='grid grid-cols-autoColums justify-center items-center px-10 gap-20 md:px-24 md:py-10'>
-        {filteredData.map(product => (
+      <ul className='grid grid-cols-autoColums justify-center items-center px-10 gap-20 md:px-60 md:py-5'>
+        {data?.products.map(product => (
           <li key={product._id}>
             <ProductCard product={product} />
           </li>
         ))}
       </ul>
+      <Pagination
+        actualPage={actualPage}
+        setActualPage={setActualPage}
+        totalPages={totalPages}
+      />
     </>
   )
 }

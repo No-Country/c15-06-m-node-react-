@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form'
 import { usePostData } from '../hooks/usePostData'
 import { Navigate } from 'react-router-dom'
 import { useState } from 'react'
+import { validations } from '../constants/Validations'
 
 export function Register() {
   const [response, setResponse] = useState(null)
@@ -15,32 +16,22 @@ export function Register() {
   } = useForm()
 
   async function submit(data) {
+    const { name, email, password, lastname } = data
+
     const serverResponse = await usePostData({
-      data,
+      data: {
+        name,
+        email,
+        password,
+        lastname,
+      },
       url: '/register',
-      options: {},
     })
     setResponse(serverResponse)
-    console.log(response)
+
     if (!response.message) {
       Navigate('/')
     }
-  }
-
-  const emailValidation = {
-    required: 'Campo requerido',
-    pattern: {
-      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-      message: 'Email invalido',
-    },
-  }
-
-  const passwordValidation = {
-    required: 'Campo requerido',
-    pattern: {
-      value: /^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/,
-      message: 'Mínimo 8 caracteres, una letra y un número',
-    },
   }
 
   return (
@@ -58,19 +49,21 @@ export function Register() {
             {...register('name', { required: true })}
             className='border-2 rounded-lg py-3 px-2 w-60'
             placeholder='Nombre'
+            autoComplete='on'
           />
 
           <input
-            {...register('lastName', { required: true })}
+            {...register('lastname', { required: true })}
             className='border-2 rounded-lg py-3 px-2 w-60'
             placeholder='Apellido'
+            autoComplete='on'
           />
         </div>
         <p>{errors.name?.message}</p>
         <p>{errors.lastName?.message}</p>
         <div className='flex flex-col gap-2'>
           <input
-            {...register('email', emailValidation)}
+            {...register('email', validations.email)}
             className='border-2 rounded-lg py-3 px-2 w-[496px]'
             placeholder='Email'
           />
@@ -78,7 +71,7 @@ export function Register() {
         </div>
         <div className='flex flex-col gap-2'>
           <input
-            {...register('password', passwordValidation)}
+            {...register('password', validations.password)}
             className='border-2 rounded-lg py-3 px-2 w-[496px]'
             type='password'
             placeholder='Contraseña'
@@ -103,7 +96,7 @@ export function Register() {
         </div>
 
         <Link
-          to='/register'
+          to='/user/login'
           className='text-neutral-400 font-medium block py-2'>
           ¿Ya tienes una cuenta?{'  '}
           <span className='text-yellow-400'>Inicia sesión</span>
