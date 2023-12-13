@@ -29,8 +29,7 @@ const getAllProducts = async (req, res) => {
     if (category) {
       // Filtrar por categoría (en minúsculas para ser insensible a mayúsculas)
       const categoriaLower = category.toLowerCase()
-      filter.categoria = categoriaLower
-      console.log('Categoria en minúsculas:', categoriaLower)
+      filter.category = categoriaLower
     }
 
     if (!isNaN(priceMin)) {
@@ -41,8 +40,6 @@ const getAllProducts = async (req, res) => {
       filter.price = { ...filter.price, $lte: priceMax }
     }
 
-    console.log('Filtro:', filter)
-
     // Consultar la base de datos con paginación, filtro y orden
     const products = await productSchema
       .find(filter)
@@ -51,6 +48,7 @@ const getAllProducts = async (req, res) => {
       .limit(limit)
 
     // Obtener el total de productos sin paginación
+
     const totalProducts = await productSchema.countDocuments(filter)
 
     res.json({
@@ -59,6 +57,7 @@ const getAllProducts = async (req, res) => {
       totalPages: Math.ceil(totalProducts / limit)
     })
   } catch (error) {
+    console.error('error en la consulta', error)
     res.status(500).json({ message: error.message })
   }
 }
