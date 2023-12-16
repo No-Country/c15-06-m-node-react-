@@ -9,6 +9,11 @@ export default {
       boxShadow: {
         default: '0 3px 10px 5px  rgba(0, 0, 0, 0.12)',
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        rajdhani: ['Rajdhani', 'sans-serif'],
+        raleway: ['Raleway', 'sans-serif'],
+      },
     },
   },
   plugins: [],
