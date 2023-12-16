@@ -2,16 +2,16 @@ export function ProductDescription({ product }) {
   return (
     <>
       <article className='hidden md:flex gap-4 p-10 h-[80vh] '>
-        <section className='w-1/2 px-16'>
+        <section className='w-1/2 px-16 group'>
           <img
             src={product.imageUrl[0]}
             alt=''
-            className='hover:hidden md:w-full md:h-full object-cover rounded-lg'
+            className='group-hover:hidden md:w-full md:h-full object-cover rounded-lg'
           />
           <img
             src={product.imageUrl[1]}
             alt=''
-            className='hover:block hidden md:w-full md:h-full object-cover rounded-lg'
+            className='group-hover:block hidden md:w-full md:h-full object-cover rounded-lg'
           />
         </section>
         <section className='w-1/2 flex flex-col gap-10'>

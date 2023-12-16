@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Layout } from '../layouts/Layout'
 import { Home } from '../pages/Home'
 import { NotFound } from '../pages/NotFound'
@@ -10,60 +10,31 @@ import { Login } from '../components/Login'
 import { Register } from '../components/Register'
 import { CartPage } from '../pages/CartPage'
 import { ResultSearch } from '../pages/ResultSearch'
+import { ProtectedRoute } from '../util/Auth'
 
-export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    errorElement: <Error />,
-    children: [
-      {
-        index: true,
-        path: '/',
-        element: <Home />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/products',
-        element: <Products />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/product/:id',
-        element: <Product />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/products/category/:category',
-        element: <CategoryPage />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/cart',
-        element: <CartPage />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/search',
-        element: <ResultSearch />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/login',
-        element: <Login />,
-        errorElement: <Error />,
-      },
-      {
-        path: '/register',
-        element: <Register />,
-        errorElement: <Error />,
-      },
+export function Router() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />} errorElement={<Error />}>
+          <Route index element={<Home />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/product/:id' element={<Product />} />
+          <Route
+            path='/products/category/:category'
+            element={<CategoryPage />}
+          />
 
-      {
-        path: '*',
-        element: <NotFound />,
-        errorElement: <Error />,
-      },
-    ],
-  },
-])
+          <Route path='/search' element={<ResultSearch />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route
+            path='/cart'
+            element={<ProtectedRoute component={CartPage} />}
+          />
+          <Route path='*' element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
+}

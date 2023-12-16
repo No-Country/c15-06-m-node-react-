@@ -2,6 +2,9 @@ import { Logo } from './Logo'
 import { HeaderIcons } from './HeaderIcons'
 import { SearchBar } from './SearchBar'
 import { Link } from 'react-router-dom'
+import { isAuthenticated } from '../util/Auth'
+import { ButtonLogin } from '../components/ButtonLogin'
+import { ButtonRegister } from '../components/ButtonRegister'
 
 export function Header() {
   return (
@@ -11,7 +14,14 @@ export function Header() {
           <Logo />
         </Link>
         <SearchBar />
-        <HeaderIcons />
+        {isAuthenticated() ? (
+          <HeaderIcons />
+        ) : (
+          <div>
+            <ButtonRegister />
+            <ButtonLogin />
+          </div>
+        )}
       </header>
     </>
   )

@@ -10,20 +10,20 @@ export function ProductCard({ product }) {
   }
 
   return (
-    <div className='w-80 h-96 bg-white rounded hover:shadow-default block'>
+    <div className='w-80 h-96 bg-white rounded hover:shadow-default block group'>
       <Link className=' ' to={`/product/${product._id}`}>
-        <div className='h-1/2 w-full transition'>
+        <div className='h-1/2 w-full group-hover:hidden transition-all'>
           <img
             src={product.imageUrl[0]}
             alt={product.name}
-            className='w-full h-full object-cover rounded-lg'
+            className='w-full h-full object-cover rounded-lg aspect-square'
           />
         </div>
-        <div className='h-1/2 w-full hidden hover:block transition'>
+        <div className='w-full h-1/2 group-hover:block hidden transition-all'>
           <img
             src={product.imageUrl[1]}
             alt={product.name}
-            className='w-full h-full object-cover rounded-lg hidden hover:block'
+            className='w-full h-full object-cover rounded-lg aspect-square'
           />
         </div>
         <div className='p-4 flex flex-col items-center  justify-between'>

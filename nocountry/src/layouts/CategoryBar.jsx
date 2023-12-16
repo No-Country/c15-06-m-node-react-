@@ -8,11 +8,12 @@ export function CategoryBar() {
   )
 
   const categories = [
-    'frutos secos',
+    'frutos secos y cereales',
     'hierbas y especias',
     'proteicos',
     'legumbres',
     'infusiones',
+    'Mascotas',
   ]
 
   return (

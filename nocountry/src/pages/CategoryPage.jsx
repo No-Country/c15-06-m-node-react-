@@ -7,8 +7,8 @@ import { deleteSpaces } from '../util/Utilities'
 
 export function CategoryPage() {
   const { category } = useParams()
-  const categoryFormat = deleteSpaces(category)
-  const URL = `/product/category/${categoryFormat}`
+
+  const URL = `/product?category=${category}`
 
   const { data, error, loading } = useGetData(URL, category)
 
@@ -19,7 +19,7 @@ export function CategoryPage() {
       {error && <p>{error}</p>}
       <ul className='grid grid-cols-autoColums justify-center items-center px-10 gap-5 md:gap-20 md:px-24 md:py-10'>
         {data &&
-          data?.map(product => (
+          data?.products.map(product => (
             <li key={product._id}>
               <ProductCard product={product} key={product._id} />
             </li>

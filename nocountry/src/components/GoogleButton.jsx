@@ -5,7 +5,7 @@ export function GoogleButton({ to }) {
     <a
       href={to}
       className='flex gap-2 border-2 rounded-lg justify-center items-center p-3 text-lg'>
-      <GoogleIcon /> Continua con Google
+      <GoogleIcon /> Continúa con Google
     </a>
   )
 }

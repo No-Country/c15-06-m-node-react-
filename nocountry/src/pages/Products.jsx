@@ -28,6 +28,8 @@ export function Products() {
     dispatch(setClear())
   }, [])
 
+  console.log(data)
+
   return (
     <>
       {loading && <Loading />}
