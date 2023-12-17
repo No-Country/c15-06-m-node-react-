@@ -11,6 +11,8 @@ import { Register } from '../components/Register'
 import { CartPage } from '../pages/CartPage'
 import { ResultSearch } from '../pages/ResultSearch'
 import { ProtectedRoute } from '../util/Auth'
+import { OngPayment } from '../pages/OngPayment'
+import { OngPage } from '../pages/OngPage'
 
 export function Router() {
   return (
@@ -24,7 +26,8 @@ export function Router() {
             path='/products/category/:category'
             element={<CategoryPage />}
           />
-
+          <Route path='/ong-payment' element={<OngPayment />}/>
+          <Route path='/ong' element={<OngPage />}/>
           <Route path='/search' element={<ResultSearch />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
