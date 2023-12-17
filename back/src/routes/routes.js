@@ -17,7 +17,10 @@ const { updateProductCart } = require('../controllers/updateProductCart.js')
 const { deleteProductCart } = require('../controllers/deleteProductCart.js')
 const { deleteUser } = require('../controllers/deleteUser.js')
 const { deleteProduct } = require('../controllers/deleteProduct.js')
-const {payment} = require('../controllers/payment.js')
+const { createOrder } = require('../controllers/payment.controller.js')
+const { getPaymentSuccess } = require('../controllers/getPaymentSuccess.js')
+const { getPaymentCancel } = require('../controllers/getPaymentCancel.js')
+
 const router = express.Router()
 
 // Rutas usuarios
@@ -41,11 +44,18 @@ router.get('/profile', authRequired, profile)
 // admin
 router.get('/admin', authRequired, dashboardAdmin)
 // carrito de compras
-router.get('/cart', authRequired, getProductCart)
+router.get('/cart', getProductCart)
 router.post('/cartproduct', authRequired, addProductCart)
 router.put('/cartproduct/:id', authRequired, updateProductCart)
 router.delete('/cartproduct/:id', authRequired, deleteProductCart)
 
-//pay
-router.get('/payment')
+/* // pay
+router.get('/payment', function (req, res, next) {
+  PaymentInstance.getPaymentLink(req, res)
+}) */
+
+router.post('/create-order', createOrder)
+router.get('/success', getPaymentSuccess)
+router.get('/cancel', getPaymentCancel)
+
 module.exports = router
