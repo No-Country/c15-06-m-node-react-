@@ -1,5 +1,4 @@
 import { Main } from '../layouts/Main'
-import { Aside } from '../layouts/Aside'
 
 export function Home() {
   return (
