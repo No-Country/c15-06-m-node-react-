@@ -2,7 +2,7 @@ const cartSchema = require('../models/cart')
 const productSchema = require('../models/products')
 
 const addProductCart = async (req, res) => {
-  const { name, imageUrl, price } = req.body
+  const { name, imageUrl, price, description } = req.body
 
   try {
     const siProduct = await productSchema.findOne({ name })
@@ -18,6 +18,7 @@ const addProductCart = async (req, res) => {
         name,
         imageUrl,
         price,
+        description,
         amount: 1
       })
 
