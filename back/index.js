@@ -1,17 +1,24 @@
 const express = require('express')
+const path = require('path')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
-require('dotenv').config()
+const morgan = require('morgan')
+const dotenv = require('dotenv')
 const userRoute = require('./src/routes/routes')
 
 const app = express()
-const port = process.env.PORT || 3001
+dotenv.config()
+app.use(morgan('dev'))
+
+const port = process.env.PORT || 4000
 
 // Middleware
 app.use(cors())
 app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+app.use(express.static(path.join(__dirname, 'public')))
 
 // Routes
 app.use('/api', userRoute)
