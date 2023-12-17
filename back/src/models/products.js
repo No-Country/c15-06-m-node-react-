@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const { type } = require('os')
 
 const productSchema = new mongoose.Schema({
   name: {
@@ -33,6 +32,10 @@ const productSchema = new mongoose.Schema({
   status: {
     type: String,
     default: 'active'
+  },
+  inCart: {
+    type: Boolean,
+    default: false
   }
 
 }, {

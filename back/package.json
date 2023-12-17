@@ -10,6 +10,8 @@
   "author": "Angel Tirado",
   "license": "ISC",
   "dependencies": {
+    "@mercadopago/sdk-js": "^0.0.3",
+    "axios": "^1.6.2",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -18,13 +20,16 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.2",
+    "mercadopago": "^2.0.5",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.1",
     "mongoose-findorcreate": "^4.0.0",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-local-mongoose": "^8.0.0",
+    "morgan": "^1.10.0",
     "render": "^0.1.4",
+    "stripe": "^14.9.0",
     "vercel": "^32.5.6"
   },
   "devDependencies": {

@@ -3,7 +3,10 @@
     "name": "Almendras",
     "description": "Almendras crujientes y saludables, ricas en antioxidantes y grasas saludables.",
     "price": 5.99,
-    "imageUrl":["https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1508061253366-f7da158b6d46?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1508779018996-601e37fa274e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "frutos secos y cereales",
     "features": "Sin sal añadida, fuente de vitamina E."
   },
@@ -11,7 +14,10 @@
     "name": "Avena",
     "description": "Avena integral orgánica, ideal para desayunos nutritivos y energéticos.",
     "price": 3.49,
-    "imageUrl":["https://images.unsplash.com/photo-1586810504230-09dab6b8e01b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1586810504230-09dab6b8e01b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1598048851887-0263d4f43e73?q=80&w=1712&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "frutos secos y cereales",
     "features": "Alta en fibra, certificada orgánica."
   },
@@ -19,7 +25,10 @@
     "name": "Pistachos",
     "description": "Pistachos tostados y salados, aperitivo sabroso y lleno de proteínas.",
     "price": 7.99,
-    "imageUrl":["https://images.unsplash.com/photo-1598110996285-54523b72be93?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1598110996285-54523b72be93?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1645291787141-3c510e64a17d?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "frutos secos y cereales",
     "features": "Rico en proteínas, fuente de ácidos grasos saludables."
   },
@@ -27,7 +36,10 @@
     "name": "Quinoa",
     "description": "Quinoa orgánica, fuente completa de proteínas y fácil de incorporar en comidas.",
     "price": 6.99,
-    "imageUrl":["https://images.unsplash.com/photo-1590616270818-f08142f85c6b?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1590616270818-f08142f85c6b?q=80&w=986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1665674053062-4ff91c7204e6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "frutos secos y Cereales",
     "features": "Certificada orgánica, sin gluten."
   },
@@ -35,7 +47,10 @@
     "name": "Albahaca",
     "description": "Albahaca fresca y fragante, ideal para realzar el sabor de platos italianos.",
     "price": 2.99,
-    "imageUrl":["https://images.unsplash.com/photo-1629157247277-48f870757026?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1629157247277-48f870757026?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1627738663093-d0779d56e3bc?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "hierbas y especias",
     "features": "Orgánica, cultivada localmente."
   },
@@ -43,7 +58,10 @@
     "name": "Cúrcuma Molida",
     "description": "Cúrcuma en polvo, especia antiinflamatoria con un toque terroso.",
     "price": 3.49,
-    "imageUrl":["https://images.unsplash.com/photo-1598712586188-27853d8ccf0a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1598712586188-27853d8ccf0a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1603404235009-71c1f80e31fc?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "hierbas y especias",
     "features": "Rico en curcumina, sin aditivos."
   },
@@ -51,7 +69,10 @@
     "name": "Orégano Seco",
     "description": "Orégano seco, esencial para pizzas y platos mediterráneos.",
     "price": 1.99,
-    "imageUrl": ["https://st2.depositphotos.com/1006009/6600/i/450/depositphotos_66001421-stock-photo-oregano-leaf.jpg"],
+    "imageUrl": [
+      "https://st2.depositphotos.com/1006009/6600/i/450/depositphotos_66001421-stock-photo-oregano-leaf.jpg",
+      "https://comprarespecias.net/wp-content/uploads/2022/02/tipos-de-oregano.jpg"
+    ],
     "category": "hierbas y especias",
     "features": "Aroma intenso, recolectado a mano."
   },
@@ -59,7 +80,10 @@
     "name": "Pimienta Negra Entera",
     "description": "Granos de pimienta negra, aporta un sabor robusto a tus platos.",
     "price": 4.99,
-    "imageUrl": ["https://images.unsplash.com/photo-1585138977386-373519e28a3c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1585138977386-373519e28a3c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1506085621370-98b475435879?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "hierbas y especias",
     "features": "Molinillo incorporado, frescura garantizada."
   },
@@ -67,7 +91,10 @@
     "name": "Hamburguesa de Espinacas",
     "description": "Una opción deliciosa y saludable para disfrutar en tus comidas sin carne.",
     "price": 3.79,
-    "imageUrl": ["https://scontent.faep1-1.fna.fbcdn.net/v/t1.6435-9/93058000_602105960385240_9160199342877835264_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c2f564&_nc_ohc=wNXL3ncGd6sAX-omjum&_nc_ht=scontent.faep1-1.fna&oh=00_AfCYzoxxLiITUZMqtpJhCDv-7dYSZ1b8jF8IqwNYUJY-Pw&oe=658FEC2F"],
+    "imageUrl": [
+      "https://scontent.faep1-1.fna.fbcdn.net/v/t1.6435-9/93058000_602105960385240_9160199342877835264_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=c2f564&_nc_ohc=wNXL3ncGd6sAX-omjum&_nc_ht=scontent.faep1-1.fna&oh=00_AfCYzoxxLiITUZMqtpJhCDv-7dYSZ1b8jF8IqwNYUJY-Pw&oe=658FEC2F",
+      "https://img-global.cpcdn.com/recipes/f0ce690222a234d3/680x482cq70/hamburguesas-de-arvejas-y-espinacas-foto-principal.jpg"
+    ],
     "category": "proteicos",
     "features": "Fuente de proteínas y fibra. Textura jugosa y sabor equilibrado. Sin ingredientes artificiales."
   },
@@ -75,7 +102,10 @@
     "name": "Barrita de Proteína",
     "description": "Barrita energética con proteínas vegetales, ideal para snacks saludables.",
     "price": 2.99,
-    "imageUrl": ["https://images.unsplash.com/photo-1633360821154-1935fb5671e6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1633360821154-1935fb5671e6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1554886729-fe8d4499a108?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "proteicos",
     "features": "Proteína de almendra para un impulso de energía, baja en azúcares, sin gluten para dietas variadas."
   },
@@ -83,7 +113,10 @@
     "name": "Soja texturizada",
     "description": "Producto deshidratado de soja con textura similar a la carne. Ideal para platos vegetarianos.",
     "price": 3.99,
-    "imageUrl": ["https://images.ecestaticos.com/-HsmqZ519pPzdN_8qsRdMUj7qt8=/117x1:2003x1413/996x747/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F670%2F039%2F2c0%2F6700392c0a8838d53b58862cbabf92a6.jpg"],
+    "imageUrl": [
+      "https://images.ecestaticos.com/-HsmqZ519pPzdN_8qsRdMUj7qt8=/117x1:2003x1413/996x747/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F670%2F039%2F2c0%2F6700392c0a8838d53b58862cbabf92a6.jpg",
+      "https://www.minisupersveganos.com/wp-content/uploads/2022/05/706-Soja-texturizada-fina-14C.jpg"
+    ],
     "category": "proteicos",
     "features": "Rica en proteínas, adaptable a diversas recetas culinarias gracias a su capacidad para absorber sabores. Baja en grasas saturadas y libre de colesterol."
   },
@@ -91,7 +124,10 @@
     "name": "Leche de Almendras",
     "description": "Leche de almendras enriquecida con vitaminas y minerales esenciales.",
     "price": 3.49,
-    "imageUrl": ["https://images.unsplash.com/photo-1583507623011-5cc6ff99e11c?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1583507623011-5cc6ff99e11c?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1626196340104-2d6769a08761?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "proteicos",
     "features": "Fortificada con calcio y vitamina D, baja en calorías para una opción ligera, sin lactosa para intolerantes."
   },
@@ -99,7 +135,10 @@
     "name": "legumbres Mixtas Orgánicas",
     "description": "Paquete de legumbres variadas, cultivadas de forma orgánica y sostenible.",
     "price": 8.49,
-    "imageUrl": ["https://cdn.semana.es/wp-content/uploads/2021/02/destacada-20.jpg"],
+    "imageUrl": [
+      "https://img.freepik.com/foto-gratis/mezcla-frijoles_1339-258.jpg?w=826&t=st=1702306924~exp=1702307524~hmac=80ffb92656667431590a64a1231025bbf9d375364738515e9f98f030f3c5f837",
+      "https://img.freepik.com/foto-gratis/vista-cercana-varios-arreglos-frijoles_23-2148648567.jpg?w=1060&t=st=1702305172~exp=1702305772~hmac=5ddf211c9c03562eaad33dc11b9d0c45315fc71dcaee9a4dd6240395cb9ab70d"
+    ],
     "category": "legumbres",
     "features": "Mezcla de garbanzos, lentejas y frijoles negros, cultivadas de manera orgánica y sostenible."
   },
@@ -107,7 +146,10 @@
     "name": "Harina de Garbanzo",
     "description": "Harina fina y nutritiva hecha de garbanzos, perfecta para recetas sin gluten.",
     "price": 4.99,
-    "imageUrl": ["https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1610725664285-7c57e6eeac3f?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://img.freepik.com/foto-gratis/vista-superior-harina-blanca-dentro-placa-sobre-fondo-blanco-masa-polvo-harina-hornear-cruda_140725-74825.jpg?w=900&t=st=1702307013~exp=1702307613~hmac=d57a0a42b02d06e9380a6a53919956c63004126a2398f011ab292164941a4d35"
+    ],
     "category": "legumbres",
     "features": "Alta en proteínas para una opción saludable, sin gluten. Ideal para panificados."
   },
@@ -115,7 +157,10 @@
     "name": "Frijoles en Conserva",
     "description": "Frijoles cocidos y listos para usar en ensaladas, sopas y guisos.",
     "price": 2.79,
-    "imageUrl": ["https://i0.wp.com/cleangreensimple.com/wp-content/uploads/canned-red-kidney-beans.jpg?resize=840%2C556&ssl=1"],
+    "imageUrl": [
+      "https://i0.wp.com/cleangreensimple.com/wp-content/uploads/canned-red-kidney-beans.jpg?resize=840%2C556&ssl=1",
+      "https://loveincorporated.blob.core.windows.net/contentimages/main/64915aeb-ba99-4aa0-9b66-b6f9e367693e-how-to-make-baked-beans.jpg"
+    ],
     "category": "legumbres",
     "features": "Listos para consumir, alto en fibra para la digestión. Sin conservantes artificiales."
   },
@@ -123,7 +168,10 @@
     "name": "Lentejas Rojas Secas",
     "description": "Lentejas rojas secas, ricas en proteínas y fáciles de cocinar.",
     "price": 3.29,
-    "imageUrl": ["https://images.unsplash.com/photo-1624564529789-e9d219b826d5?q=80&w=846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1624564529789-e9d219b826d5?q=80&w=846&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://img.freepik.com/foto-gratis/lentejas-rojas-crudas-tazon-fuente-blanco_114579-50616.jpg?w=900&t=st=1702307513~exp=1702308113~hmac=71cab54bda22fab9ed291203a6193b7bab5be5f9a538edb3f2865c213b2bc4d0"
+    ],
     "category": "legumbres",
     "features": "Cocción rápida para mayor comodidad, alta en hierro para la salud, versátil en diversas recetas."
   },
@@ -131,7 +179,10 @@
     "name": "Infusión de Manzanilla",
     "description": "Mezcla de manzanilla de alta calidad para una infusión relajante y reconfortante.",
     "price": 3.49,
-    "imageUrl": ["https://images.unsplash.com/photo-1596343621063-c7a7aaf37aa6?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1596343621063-c7a7aaf37aa6?q=80&w=985&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://img.freepik.com/foto-gratis/manzanilla-seca-cuchara-vista-superior_176474-4697.jpg?w=900&t=st=1702309901~exp=1702310501~hmac=322c6f91c349af0446aeab3c593f9cade9f06c02608f8b2ae935002a6b972c0a"
+    ],
     "category": "infusiones",
     "features": "Manzanilla orgánica para una experiencia natural. Sin cafeína para relajación. Calidad premium en cada bolsita."
   },
@@ -139,7 +190,10 @@
     "name": "Té Verde Antioxidante",
     "description": "Té verde con propiedades antioxidantes y estimulantes, perfecto para cualquier momento del día.",
     "price": 5.99,
-    "imageUrl": ["https://images.unsplash.com/photo-1576092762793-c0e9395ec4b9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1576092762793-c0e9395ec4b9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615205597144-5c7c885291d2?q=80&w=1908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
     "category": "infusiones",
     "features": "Hoja entera para un sabor auténtico, alto contenido de antioxidantes, refrescante y revitalizante."
   },
@@ -147,7 +201,10 @@
     "name": "Infusión de Hierbabuena",
     "description": "Mezcla de hierbabuena fresca para una infusión revitalizante y digestiva.",
     "price": 4.49,
-    "imageUrl": ["https://images.unsplash.com/photo-1498481548071-4d439c62cd6e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1498481548071-4d439c62cd6e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://img.freepik.com/foto-gratis/placa-madera-hoja-objeto-alimentacion-saludable_1172-451.jpg?w=740&t=st=1702310088~exp=1702310688~hmac=81934cd050dbdc25b84cf4571d1661c6a274d532fb39456a9cbb12f273a87fbc"
+    ],
     "category": "infusiones",
     "features": "Hierbabuena natural para un sabor puro, digestiva para después de las comidas, aromática y reconfortante."
   },
@@ -155,8 +212,55 @@
     "name": "Té de Cúrcuma y Jengibre",
     "description": "Té herbal con cúrcuma y jengibre, conocido por sus propiedades antiinflamatorias.",
     "price": 6.99,
-    "imageUrl": ["https://images.unsplash.com/photo-1603404235499-88032f0ae24a?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    "imageUrl": [
+      "https://images.unsplash.com/photo-1603404235499-88032f0ae24a?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://img.freepik.com/foto-gratis/te-jengibre-caliente-mesa_1150-28419.jpg?w=900&t=st=1702310137~exp=1702310737~hmac=62f5c979812ef415bb7f77317649ce70e823cc23b1d1ef0e0838e4ee7dc17165"
+    ],
     "category": "infusiones",
     "features": "Cúrcuma y jengibre para beneficios antiinflamatorios, sin cafeína para relajación, bienestar digestivo."
+  },
+  {
+    "name": "Alimento orgánico para animales",
+    "description": "PERROS: Comida deshidratada para perros Barf con ingredientes naturales y frescos que aportan un gran sabor y beneficios para la salud.  |  GATOS: Exquisita comida para gatos con 100% ingredientes orgánicos, apoya el bienestar animal y prácticas agrícolas sostenibles. Textura cremosa para el deleite de tu felino.",
+    "price": 18.99,
+    "imageUrl": [
+      "https://www.benydog.com/wp-content/uploads/2021/10/photo_2021-10-08_12-26-59.jpg",
+      "https://www.dogtore.it/media/catalog/product/cache/5d676bca33b9050453c389635d142c04/l/i/lily_s_kitchen_organic_poisson_bio_chat_19_x_85_g_2.jpg"
+    ],
+    "category": "Mascotas",
+    "features": "PERROS: Elaborada con carne de res, pollo, pescado y una mezcla de frutas y verduras para ofrecer una experiencia sabrosa y nutritiva.  |  GATOS: Comida para gatos con enfoque orgánico, sin cereales ni azúcares añadidos. Completa y equilibrada para la salud de tu mascota."
+  },
+  {
+    "name": "Snacks saludables para animales",
+    "description": "PERROS: Piel y pelaje más saludables, limpieza del sarro dental, mejora en la digestión, protección celular y aporte natural de nutrientes.  |  GATOS: Una alternativa segura y nutritiva con pasto de avena y cebada. Atrayente para gatos, perros, aves, reptiles y roedores.",
+    "price": 5.49,
+    "imageUrl": [
+      "https://www.benydog.com/wp-content/uploads/2021/02/premios-naturales-para-perros-dogift-articulaciones-fuertes.jpg ",
+      "https://www.benydog.com/wp-content/uploads/2022/03/CatgrassSeedsAvena_Cebada_Front_1800x1800.jpg"
+    ],
+    "category": "Mascotas",
+    "features": "PERROS: Ingredientes ricos en vitaminas y minerales con propiedades antioxidantes. Ofrecen un efecto antiinflamatorio para aliviar dolores osteoarticulares y son auxiliares en la formación de colágeno natural.  |  GATOS: Snack que ayuda a limpiar el estómago, promueve la digestión, actúa como laxante natural, y aporta beneficios como oxigenación sanguínea, fortalecimiento del sistema inmunológico y prevención de enfermedades."
+  },
+  {
+    "name": "Shampoo para animales",
+    "description": "PERROS: Shampoo para perros de 250 ml BIO, ideal para piel delicada. Limpia, evita nudos, alivia irritaciones, y favorece la hidratación. Con extracto de Mangostán, antimicrobiano y calmante. Seguro al lamer, libre de tóxicos.  |  GATOS: Shampoo para gatos Eco Wuapu con Miel Natural: Brillo y elevada hidratación para la piel sensible de tu felino. Ingredientes naturales y pH neutro adaptado.",
+    "price": 9.99,
+    "imageUrl": [
+      "https://shopbio.es/728-large_default/biocenter-champu-natural-para-perros-ecologico-y-vegano.jpg",
+      "https://www.mascotapasion.es/51-thickbox_default/wuapu-champu-para-gatos.jpg"
+    ],
+    "category": "Mascotas",
+    "features": "PERROS: Limpieza sin nudos, alivio de irritaciones, hidratación. Extracto de Mangostán antimicrobiano y calmante.  |  GATOS: Elaborado con miel natural para brillo e hidratación. pH neutro adaptado, ideal para pieles sensibles. Propiedades humectantes, antioxidantes, antiinflamatorias y antimicrobianas."
+  },
+  {
+    "name": "Juguete para mascotas",
+    "description": "Divierte a tu peludo amigo de manera sostenible con juguetes ecológicos. Diseñado para horas de entretenimiento, es amigable con el medio ambiente y seguro para tus mascotas.",
+    "price": 12.99,
+    "imageUrl": [
+      "https://m.media-amazon.com/images/I/51Sjlj-kymL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51ob3jOQCLL._AC_SX679_.jpg"
+    ],
+    "category": "Mascotas",
+    "features": "Juguetes resistente y ecológico para animales. Proporciona diversión duradera. Fabricado con materiales sostenibles y seguros para tus mascotas."
   }
 ]

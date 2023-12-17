@@ -1,8 +1,10 @@
 const express = require('express')
+const path = require('path')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
-require('dotenv').config()
+const morgan = require('morgan')
+const dotenv = require('dotenv')
 const userRoute = require('./src/routes/routes')
 const GoogleStrategy = require('passport-google-oauth20').Strategy
 const findOrCreate = require('mongoose-findorcreate')
@@ -11,13 +13,23 @@ const passport = require('passport')
 const session = require('express-session')
 
 const app = express()
-const port = process.env.PORT || 3001
+dotenv.config()
+app.use(morgan('dev'))
+
+const port = process.env.PORT || 4000
 
 // Middleware
-
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://main--ecovidastore1.netlify.app'
+  ],
+  credentials: true
+}))
 app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
-app.use(cors())
+app.use(express.static(path.join(__dirname, 'public')))
 
 app.use(session({
   secret: 'keyboard cat',
