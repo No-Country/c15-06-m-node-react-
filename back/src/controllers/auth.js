@@ -87,7 +87,7 @@ const login = async (req, res) => {
 
     const token = await createAccessToken({ id: userFound._id, role: userFound.role }, TOKEN_SECRET, { expiresIn: '1h' })
 
-    res.cookie('token', token)
+    res.cookie('token', token, { sameSite: 'none', secure: true })
 
     res.json({
       id: userFound._id,
