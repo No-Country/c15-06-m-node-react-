@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { GoogleButton } from './GoogleButton'
 import { UserLayout } from '../layouts/UserLayout'
 import { useDispatch } from 'react-redux'
-import { setUserData, setUserToken } from '../redux/userSlice'
+import { setUserData, setUserToken } from '../redux/UserSlice'
 import { isAuthenticated } from '../util/Auth'
 import { ArrowLeftIcon } from '../assets/icons/Icons'
 
