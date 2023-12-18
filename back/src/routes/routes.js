@@ -54,7 +54,7 @@ router.get('/payment', function (req, res, next) {
   PaymentInstance.getPaymentLink(req, res)
 }) */
 
-router.post('/create-order', createOrder)
+router.get('/create-order', createOrder)
 router.get('/success', getPaymentSuccess)
 router.get('/cancel', getPaymentCancel)
 
