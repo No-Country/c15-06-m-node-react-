@@ -14,7 +14,13 @@ app.use(morgan('dev'))
 const port = process.env.PORT || 4000
 
 // Middleware
-app.use(cors())
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://main--ecovidastore1.netlify.app'
+  ],
+  credentials: true
+}))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())

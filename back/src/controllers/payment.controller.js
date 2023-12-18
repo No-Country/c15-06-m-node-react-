@@ -1,6 +1,8 @@
 const cartSchema = require('../models/cart')
-const STRIPE_KEY = require('../../config')
+const STRIPE_KEY = require('..//../config').STRIPE_KEY
 const Stripe = require('stripe')
+/* const stripe = new Stripe(STRIPE_KEY) */
+console.log('CLAVE STRIPE:', STRIPE_KEY)
 const stripe = new Stripe(STRIPE_KEY)
 
 const createOrder = async (req, res) => {
