@@ -6,9 +6,10 @@ import { useState } from 'react'
 import { GoogleButton } from './GoogleButton'
 import { UserLayout } from '../layouts/UserLayout'
 import { useDispatch } from 'react-redux'
-import { setUserData, setUserToken } from '../redux/userSlice'
+import { setUserData } from '../redux/userSlice'
 import { isAuthenticated } from '../util/Auth'
 import { ArrowLeftIcon } from '../assets/icons/Icons'
+import { validations } from '../constants/Validations'
 
 export function Login() {
   const dispatch = useDispatch()
@@ -43,17 +44,7 @@ export function Login() {
     }
   }
 
-  const emailValidation = {
-    required: 'Campo requerido',
-    pattern: {
-      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-      message: 'Email invalido',
-    },
-  }
-
-  const passwordValidation = {
-    required: 'Campo requerido',
-  }
+  console.log(isAuthenticated())
 
   return (
     <UserLayout>
@@ -80,7 +71,7 @@ export function Login() {
               Email
             </label>
             <input
-              {...register('email', emailValidation)}
+              {...register('email', validations.email)}
               className='border-2 rounded-lg py-3 px-2 w-60'
               placeholder='Ej: nombre@email.com'
             />
@@ -91,7 +82,7 @@ export function Login() {
               Contraseña
             </label>
             <input
-              {...register('password', passwordValidation)}
+              {...register('password', validations.password)}
               className='border-2 rounded-lg py-3 px-2 w-60'
               type='password'
               autoComplete='on'

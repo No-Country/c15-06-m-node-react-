@@ -1,15 +1,21 @@
 import Cookies from 'js-cookie'
-import { Route, Navigate } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 
 export function isAuthenticated() {
-  const token = Cookies.get('token')
+  // Recuperar el valor de la cookie en React
+  const token = Cookies.get()
   console.log(token)
-  return !!token
+  if (token) {
+    return token
+  }
+  return false
 }
 
 export function ProtectedRoute({ children }) {
   if (!isAuthenticated()) {
+    console.log('not authenticated')
     return <Navigate to='/login' />
   }
+  console.log('authenticated')
   return { children }
 }

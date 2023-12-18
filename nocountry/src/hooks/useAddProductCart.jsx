@@ -9,6 +9,7 @@
  */
 export async function useAddProductCart({ product }) {
   const { name, price, imageUrl } = product
+  const image = imageUrl[0]
   console.log(name, price, imageUrl)
   const response = await fetch(
     `${import.meta.env.VITE_BACKEND_URL}/cartproduct`,
@@ -17,6 +18,7 @@ export async function useAddProductCart({ product }) {
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify({ name, price, image }),
     }
   )
   const data = await response.json()

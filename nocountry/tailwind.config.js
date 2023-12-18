@@ -14,6 +14,17 @@ export default {
         rajdhani: ['Rajdhani', 'sans-serif'],
         raleway: ['Raleway', 'sans-serif'],
       },
+      colors: {
+        palette: {
+          primary: '#152D2F',
+          secondary: '#529296',
+          tertiary: '#599A6A',
+          quaternary: '#8F5D3D',
+          quinary: '#FFC692',
+          senary: '#F6DCB1',
+          septenary: '#FFFAC2',
+        },
+      },
     },
   },
   plugins: [],

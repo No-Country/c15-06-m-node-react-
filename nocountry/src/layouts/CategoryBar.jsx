@@ -3,10 +3,6 @@ import { CategoryItem } from '../components/CategoryItem'
 import { Link } from 'react-router-dom'
 
 export function CategoryBar() {
-  const { data, error, loading } = useGetData(
-    'https://fakestoreapi.com/products/categories'
-  )
-
   const categories = [
     'frutos secos y cereales',
     'hierbas y especias',
