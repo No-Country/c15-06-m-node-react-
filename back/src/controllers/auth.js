@@ -13,29 +13,23 @@ const register = async (req, res) => {
   const passwordRegex = /^(?=.*\d)(?=.*[A-Z]).{8,}$/ // Mínimo 8 caracteres, al menos una letra en mayúscula y un número
 
   if (!password || !passwordRegex.test(password)) {
-    return res
-      .status(400)
-      .json({
-        error:
-          'Contraseña inválida. Debe contener al menos 8 caracteres, una letra en mayúscula y un número.',
-      })
+    return res.status(400).json({
+      error:
+        'Contraseña inválida. Debe contener al menos 8 caracteres, una letra en mayúscula y un número.',
+    })
   }
   // Mínimo 8 caracteres, al menos una letra y un número
 
   if (!name || !/^[a-zA-Z]+$/.test(name) || name.length > 20) {
-    return res
-      .status(400)
-      .json({
-        error: 'Nombre inválido. No debe estar vacio y contener solo letras.',
-      })
+    return res.status(400).json({
+      error: 'Nombre inválido. No debe estar vacio y contener solo letras.',
+    })
   }
 
   if (lastname && (lastname.length > 20 || !/^[a-zA-Z]+$/.test(lastname))) {
-    return res
-      .status(400)
-      .json({
-        error: 'Apellido inválido. No debe estar vacio y contener solo letras.',
-      })
+    return res.status(400).json({
+      error: 'Apellido inválido. No debe estar vacio y contener solo letras.',
+    })
   }
 
   if (!email || !emailRegex.test(email)) {
@@ -43,12 +37,10 @@ const register = async (req, res) => {
   }
 
   if (!password || !passwordRegex.test(password)) {
-    return res
-      .status(400)
-      .json({
-        error:
-          'Contraseña inválida. Debe contener al menos 8 caracteres, una letra y un número.',
-      })
+    return res.status(400).json({
+      error:
+        'Contraseña inválida. Debe contener al menos 8 caracteres, una letra y un número.',
+    })
   }
 
   try {
@@ -104,12 +96,10 @@ const login = async (req, res) => {
 
     // Verificar el estado del usuario
     if (userFound.status === 'inactive') {
-      return res
-        .status(401)
-        .json({
-          message:
-            'Su cuenta ha sido desactivada. Comuníquese con soporte. mailsoporte@.com',
-        })
+      return res.status(401).json({
+        message:
+          'Su cuenta ha sido desactivada. Comuníquese con soporte. mailsoporte@.com',
+      })
     }
 
     const isMatch = await bcrypt.compare(password, userFound.password)
@@ -125,8 +115,8 @@ const login = async (req, res) => {
 
     res.cookie('token', token, {
       sameSite: 'none',
-      secure: true,
-      domain: 'https://main--ecovidastore1.netlify.app',
+      secure: false,
+      domain: '',
     })
 
     res.json({
