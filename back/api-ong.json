@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Fundacion huella animal",
+        "description": "Fundación Huella Animal es una organización sin fines de lucro que nace el año 2015 con el propósito de dar solución a la problemática de Bienestar Animal y Tenencia Responsable de Mascotas y Animales de Compañía en Chile. Hoy en día hemos crecido mucho como equipo y nos hemos formado en distintas áreas.",
+        "price": 1.00,
+        "imageUrl":["https://fundacionhuellaanimal.cl/wp-content/uploads/2023/04/Logo_Fundacion-300x167.png"],
+        "url":"https://fundacionhuellaanimal.cl/",
+        "categoria":"ong"
+    },
+    {
+        "name": "Banco de alimentos",
+        "description": "Oganización que está enfocada en la temática del hambre, la nutrición y la inseguridad alimentaria, para llegar con más alimentos a más personas que sufren hambre, incorporando más organizaciones comunitarias de AMBA, en alianza con otros actores sociales.",
+        "price": 1.00,
+        "imageUrl":["https://www.bancodealimentos.org.ar/wp-content/themes/bda/img/logoBdawebblanco@2x.png"],
+        "url":"https://www.bancodealimentos.org.ar/",
+        "categoria":"ong"
+    },
+    {
+        "name": "Banco de alimentos",
+        "description": "Oganización que está enfocada en la temática del hambre, la nutrición y la inseguridad alimentaria, para llegar con más alimentos a más personas que sufren hambre, incorporando más organizaciones comunitarias de AMBA, en alianza con otros actores sociales.",
+        "price": 1.00,
+        "imageUrl":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp9v7zaCawNtY9KURK3TwngvynxbAsEEKNJzS_iPoV5vIO3VoNAJeqpMlLDtAK9bCdXl4"],
+        "url":"https://www.vidasilvestre.org.ar/",
+        "categoria":"ong"
+    }
+]
