@@ -20,7 +20,7 @@ const { deleteProduct } = require('../controllers/deleteProduct.js')
 const { createOrder } = require('../controllers/payment.controller.js')
 const { getPaymentSuccess } = require('../controllers/getPaymentSuccess.js')
 const { getPaymentCancel } = require('../controllers/getPaymentCancel.js')
-
+const { getOngs } = require('../controllers/getOng.js')
 const router = express.Router()
 
 // Rutas usuarios
@@ -54,8 +54,9 @@ router.get('/payment', function (req, res, next) {
   PaymentInstance.getPaymentLink(req, res)
 }) */
 
-router.get('/create-order', createOrder)
+router.get('/create-order', authRequired, createOrder)
 router.get('/success', getPaymentSuccess)
 router.get('/cancel', getPaymentCancel)
 
+router.get('/ong', authRequired, getOngs)
 module.exports = router
