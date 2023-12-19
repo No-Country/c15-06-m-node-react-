@@ -26,15 +26,21 @@ export function Router() {
             path='/products/category/:category'
             element={<CategoryPage />}
           />
-          <Route path='/ong-payment' element={<OngPayment />}/>
-          <Route path='/ong' element={<OngPage />}/>
+          <Route path='/ong-payment' element={<OngPayment />} />
+          <Route path='/ong' element={<OngPage />} />
           <Route path='/search' element={<ResultSearch />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+
           <Route
             path='/cart'
-            element={<ProtectedRoute component={CartPage} />}
+            element={
+              <ProtectedRoute>
+                <CartPage />
+              </ProtectedRoute>
+            }
           />
+
           <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
