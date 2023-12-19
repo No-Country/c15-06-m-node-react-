@@ -23,6 +23,7 @@ export default {
           quinary: '#FFC692',
           senary: '#F6DCB1',
           septenary: '#FFFAC2',
+          octonary: '#4CAF50',
         },
       },
     },
