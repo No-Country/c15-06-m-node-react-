@@ -23,7 +23,7 @@ const products = [
 
 export function CartPage() {
   const totalPrice = products.reduce((acc, product) => acc + product.price, 0)
-
+  console.log('cart')
   return (
     <main className='flex flex-col gap-4 p-4 px-96'>
       <div>

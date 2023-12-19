@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { GoogleButton } from './GoogleButton'
 import { UserLayout } from '../layouts/UserLayout'
 import { useDispatch } from 'react-redux'
-import { setUserData } from '../redux/userSlice'
+import { setUserData, setUserAuth } from '../redux/userSlice'
 import { isAuthenticated } from '../util/Auth'
 import { ArrowLeftIcon } from '../assets/icons/Icons'
 import { validations } from '../constants/Validations'
@@ -35,16 +35,15 @@ export function Login() {
       url: '/login',
       options: { credentials: 'include' },
     })
-
+    console.log(serverResponse)
     setResponse(serverResponse)
-
-    if (isAuthenticated()) {
+    // Cambiar a cookie
+    if (serverResponse?.id) {
       dispatch(setUserData(serverResponse.user))
+      dispatch(setUserAuth(true))
       Navigate('/')
     }
   }
-
-  console.log(isAuthenticated())
 
   return (
     <UserLayout>
