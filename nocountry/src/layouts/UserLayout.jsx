@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import HojasLat from '../assets/icons/hojas-login.svg'
+import HojasLat from '../imgs/hoja-planta.png'
 
 export function UserLayout({ children }) {
   return (
