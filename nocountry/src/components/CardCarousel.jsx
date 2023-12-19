@@ -8,29 +8,34 @@ export function CardCarousel() {
     const data = [
         {
             name: 'Frutos secos y cereales',
-            img: 'https://img.freepik.com/foto-gratis/vista-superior-cucharas-variedad-nueces_23-2148452903.jpg?w=996&t=st=1702915531~exp=1702916131~hmac=71b3b27624933435382dde729f60e870e4092c1d7172da29544310616c319ef4',
-            url: '/'
+            img: 'https://img.freepik.com/foto-gratis/cucharas-varios-frutos-secos_23-2147803683.jpg?w=740&t=st=1703012872~exp=1703013472~hmac=0c406af34e70e949d39d8f89a4036fb0d4d891a6c0c1310137a59ee34dc84e5d',
+            url: '/products/category/Frutos%20secos%20y%20cereales'
         },
         {
             name: 'Hierbas y especias',
             img: 'https://img.freepik.com/fotos-premium/ajo-romero-laurel-pimienta-jamaica-pimienta-aislado-espacio-blanco-endecha-plana-vista-superior_168508-1256.jpg?w=996',
-            url: '/',
+            url: '/products/category/Hierbas%20y%20especias',
             objectPosition: 'left center'
         },
         {
             name: 'Proteicos',
             img: 'https://newsnetwork.mayoclinic.org/n7-mcnn/7bcc9724adf7b803/uploads/2017/02/wooden-tray-of-protein-foods-fish-nuts-16x9.jpg',
-            url: '/'
+            url: '/products/category/Proteicos'
         },
         {
             name: 'A base de legumbres',
             img: 'https://cardiosalud.org/wp-content/uploads/2019/10/legumbres-4.jpg',
-            url: '/'
+            url: '/products/category/Legumbres'
+        },
+        {
+            name: 'Infusiones',
+            img: 'https://images.unsplash.com/photo-1576092762793-c0e9395ec4b9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            url: '/products/category/Infusiones'
         },
         {
             name: 'Mascotas',
             img: 'https://images.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg?tx=w_1200',
-            url: '/'
+            url: '/products/category/Mascotas'
         }
     ]
 
