@@ -76,7 +76,7 @@ export function CardCarousel() {
                     {data.map((d) => (
                         <div className="h-[670px] w-[360px]">
                             <div className="w-[360px] flex justify-center items-center">
-                                <img src={d.img} alt={d.name} className="h-[530px] w-[360px] object-cover rounded-2xl" style={{ objectPosition: d.objectPosition || 'center center' }} />
+                                <img src={d.img} alt={d.name} className="h-[530px] w-[360px] object-cover rounded-2xl shadow-md" style={{ objectPosition: d.objectPosition || 'center center' }} />
                             </div>
 
                             <div className="font-rajdhani flex flex-col justify-center items-center gap-4 p-4" >
