@@ -76,13 +76,13 @@ export function CardCarousel() {
                     {data.map((d) => (
                         <div className="h-[670px] w-[360px]">
                             <div className="w-[360px] flex justify-center items-center">
-                                <img src={d.img} alt='' className="h-[530px] rounded-2xl" />
+                                <img src={d.img} alt={d.name} className="h-[530px] w-[360px] object-cover rounded-2xl" style={{ objectPosition: d.objectPosition || 'center center' }} />
                             </div>
 
                             <div className="font-rajdhani flex flex-col justify-center items-center gap-4 p-4" >
                                 <p className="font-medium text-xl">{d.name}</p>
                                 <button className="text-palette-quaternary font-semibold text-xl px-8 py-3 rounded-lg border border-palette-quaternary hover:bg-palette-quaternary hover:text-white">
-                                    <Link to={`${d.url}`}>Ver ahora!</Link>
+                                    <Link to={d.url}>Ver ahora!</Link>
                                 </button>
                             </div>
                         </div>
