@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 
 .gradient-text {
-    /* background: linear-gradient(to bottom, #152D2F 0%, rgba(246, 220, 177, 0.8) 90%, rgba(246, 220, 177, 0.8) 100%); */
     background: linear-gradient(25deg, #152D2F 35%, #F6DCB1 100%);
-    /* background: linear-gradient(to right, #152D2F, #F6DCB1); */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
