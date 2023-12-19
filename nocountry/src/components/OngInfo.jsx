@@ -11,10 +11,6 @@ export function OngInfo() {
             <Link to={`https://fundacionhuellaanimal.cl/`} target='blank'>
                 <p className='mt-4 font-bold'>https://fundacionhuellaanimal.cl/</p>
             </Link>
-            <p className='mt-10 font-semibold'>Caract. ONG</p>
-            <div>
-                <img className='mt-6' src={caracteristicasOng} alt="Caracteristicas ONG" />
-            </div>
         </div>
     )
 }
