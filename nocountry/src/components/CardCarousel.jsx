@@ -13,8 +13,9 @@ export function CardCarousel() {
         },
         {
             name: 'Hierbas y especias',
-            img: 'https://cpr.heart.org/-/media/AHA/Recipe/Article-Images/spices.jpg?h=417&w=740&hash=B7634FECEDBF99BD63171E03EA7432D7',
-            url: '/'
+            img: 'https://img.freepik.com/fotos-premium/ajo-romero-laurel-pimienta-jamaica-pimienta-aislado-espacio-blanco-endecha-plana-vista-superior_168508-1256.jpg?w=996',
+            url: '/',
+            objectPosition: 'left center'
         },
         {
             name: 'Proteicos',
@@ -28,7 +29,7 @@ export function CardCarousel() {
         },
         {
             name: 'Mascotas',
-            img: 'https://vsd.mx/wp-content/uploads/2023/11/%C2%BFPeros-o-Gatos-%C2%BFQue%CC%81-es-mejor-para-mi.png',
+            img: 'https://images.hola.com/imagenes/estar-bien/20180417122950/perro-gato-casa-convivencia/0-558-880/perro-gato-en-casa-1-t.jpg?tx=w_1200',
             url: '/'
         }
     ]
