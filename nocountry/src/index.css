@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 
-.gradient-text {
-    background: linear-gradient(25deg, #152D2F 35%, #F6DCB1 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
