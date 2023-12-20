@@ -107,11 +107,13 @@ const login = async (req, res) => {
     if (!isMatch)
       return res.status(400).json({ message: 'Contraseña incorrecta' })
 
+
     const token = await createAccessToken(
       { id: userFound._id, role: userFound.role },
       TOKEN_SECRET,
       { expiresIn: '1h' }
     )
+
 
     res.cookie('token', token, {
       sameSite: 'lax',
@@ -123,7 +125,12 @@ const login = async (req, res) => {
       username: userFound.name,
       lastname: userFound.lastname,
       email: userFound.email,
+
+      token,
+      createdAt: userFound.createdAt
+
       createdAt: userFound.createdAt,
+
     })
   } catch (error) {
     res.status(500).json({ message: error.message })
