@@ -115,8 +115,7 @@ const login = async (req, res) => {
 
     res.cookie('token', token, {
       sameSite: 'lax',
-      secure: false,
-      domain: 'localhost',
+      secure: true,
     })
 
     res.json({

@@ -11,7 +11,7 @@ export function CategoryPage() {
   const URL = `/product?category=${category}`
 
   const { data, error, loading } = useGetData(URL, category)
-
+  console.log(data)
   return (
     <>
       <CategoryHeader category={category} />
