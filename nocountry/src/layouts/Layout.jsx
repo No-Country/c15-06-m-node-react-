@@ -15,7 +15,6 @@ export function Layout() {
     const cookie = cookies.get()
 
     if (cookie.token) {
-      console.log(cookie.token)
     }
   }, [])
 

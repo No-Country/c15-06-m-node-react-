@@ -7,7 +7,6 @@ export function ButtonAddToCart({ product }) {
   const dispatch = useDispatch()
   function addProduct() {
     const response = useAddProductCart({ product })
-    console.log(response)
   }
 
   return (

@@ -36,7 +36,7 @@ export function Login() {
       url: '/login',
       options: { credentials: 'include' },
     })
-    console.log(serverResponse)
+
     setResponse(serverResponse)
     // Cambiar a cookie
     if (serverResponse?.id) {

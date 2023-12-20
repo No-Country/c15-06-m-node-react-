@@ -1,6 +1,6 @@
 import { ButtonDeleteProduct } from './ButtonDeleteProduct'
 
-export function CartItem({ product }) {
+export function CartItem({ product, setUpdate }) {
   return (
     <article className='flex gap-4 w-full justify-between items-center '>
       <div className='flex justify-center items-center gap-10'>
@@ -12,8 +12,8 @@ export function CartItem({ product }) {
         <div>
           <h3 className='text-xl'>{product.name}</h3>
           <div className='flex gap-4 mt-4'>
-            <p>Cantidad: 2</p>
-            <ButtonDeleteProduct product={product} />
+            <p>Cantidad: {product.amount}</p>
+            <ButtonDeleteProduct product={product} setUpdate={setUpdate} />
           </div>
         </div>
       </div>

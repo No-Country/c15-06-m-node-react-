@@ -1,14 +1,15 @@
 import { CartItem } from '../components/CartItem'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useGetData } from '../hooks/useGetData'
 import { Loading } from '../layouts/Loading'
 
 export function CartPage() {
+  const [update, setUpdate] = useState(false)
+
   const URL = '/cart'
-  const { data, error, loading } = useGetData(URL, '', {
+  const { data, error, loading } = useGetData(URL, update, {
     credentials: 'include',
   })
-  console.log(data)
 
   const totalPrice = data?.productCart
     .reduce((acc, product) => acc + product.price, 0)
@@ -22,9 +23,8 @@ export function CartPage() {
 
       {error && <p>{error}</p>}
 
-      {loading && <Loading />}
       {data?.productCart.map(product => (
-        <CartItem key={product._id} product={product} />
+        <CartItem key={product._id} product={product} setUpdate={setUpdate} />
       ))}
 
       <div className='flex justify-end pr-10'>

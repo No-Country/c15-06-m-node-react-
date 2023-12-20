@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 export function isAuthenticated() {
   // Cambiar a cookie
   const token = Cookies.get('token')
-  console.log(token)
+
   // return !!token
   return useSelector(state => state.user.userAuth)
 }
@@ -18,6 +18,5 @@ export function ProtectedRoute({ children }) {
     navigate('/login')
   }
 
-  console.log('ProtectedRoute')
   return children
 }

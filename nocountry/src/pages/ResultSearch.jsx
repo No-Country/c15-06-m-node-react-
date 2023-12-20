@@ -10,7 +10,6 @@ export function ResultSearch() {
   useEffect(() => {
     const filteredData = useProductSearch(searchData, searchTerm)
     setData(filteredData)
-    console.log(data)
   }, [searchData, searchTerm])
 
   return (

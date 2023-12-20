@@ -1,4 +1,4 @@
-export function ButtonDeleteProduct({ product }) {
+export function ButtonDeleteProduct({ product, setUpdate }) {
   async function deleteProduct() {
     const response = await fetch(
       `${import.meta.env.VITE_BACKEND_URL}/cartproduct/${product._id}`,
@@ -9,7 +9,8 @@ export function ButtonDeleteProduct({ product }) {
     )
 
     const data = await response.json()
-    console.log(data)
+
+    setUpdate(prev => !prev)
   }
 
   return (
