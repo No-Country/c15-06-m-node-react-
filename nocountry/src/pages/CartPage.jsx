@@ -1,7 +1,7 @@
 import { CartItem } from '../components/CartItem'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useGetData } from '../hooks/useGetData'
-import { Loading } from '../layouts/Loading'
+import { ButtonPay } from '../components/ButtonPay'
 
 export function CartPage() {
   const [update, setUpdate] = useState(false)
@@ -30,6 +30,10 @@ export function CartPage() {
       <div className='flex justify-end pr-10'>
         <p className='text-2xl mr-4'>Subtotal: </p>
         <p className='text-2xl font-bold'>${totalPrice}</p>
+      </div>
+
+      <div className='flex justify-center items-center'>
+        <ButtonPay />
       </div>
     </main>
   )

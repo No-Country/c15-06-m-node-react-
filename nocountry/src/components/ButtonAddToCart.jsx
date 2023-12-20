@@ -5,8 +5,10 @@ import { addToCart } from '../redux/CartSlice'
 
 export function ButtonAddToCart({ product }) {
   const dispatch = useDispatch()
+
+  const image = product.imageUrl[0]
   function addProduct() {
-    const response = useAddProductCart({ product })
+    const response = useAddProductCart({ product, image })
   }
 
   return (
