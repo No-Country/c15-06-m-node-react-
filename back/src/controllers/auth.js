@@ -7,29 +7,21 @@ const register = async (req, res) => {
   const { email, password, name, lastname, role } = req.body
 
   // Validaciones
-  const emailRegex =
-    /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/
+  const emailRegex = /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/
 
   const passwordRegex = /^(?=.*\d)(?=.*[A-Z]).{8,}$/ // Mínimo 8 caracteres, al menos una letra en mayúscula y un número
 
   if (!password || !passwordRegex.test(password)) {
-    return res.status(400).json({
-      error:
-        'Contraseña inválida. Debe contener al menos 8 caracteres, una letra en mayúscula y un número.',
-    })
+    return res.status(400).json({ error: 'Contraseña inválida. Debe contener al menos 8 caracteres, una letra en mayúscula y un número.' })
   }
   // Mínimo 8 caracteres, al menos una letra y un número
 
   if (!name || !/^[a-zA-Z]+$/.test(name) || name.length > 20) {
-    return res.status(400).json({
-      error: 'Nombre inválido. No debe estar vacio y contener solo letras.',
-    })
+    return res.status(400).json({ error: 'Nombre inválido. No debe estar vacio y contener solo letras.' })
   }
 
   if (lastname && (lastname.length > 20 || !/^[a-zA-Z]+$/.test(lastname))) {
-    return res.status(400).json({
-      error: 'Apellido inválido. No debe estar vacio y contener solo letras.',
-    })
+    return res.status(400).json({ error: 'Apellido inválido. No debe estar vacio y contener solo letras.' })
   }
 
   if (!email || !emailRegex.test(email)) {
@@ -37,19 +29,14 @@ const register = async (req, res) => {
   }
 
   if (!password || !passwordRegex.test(password)) {
-    return res.status(400).json({
-      error:
-        'Contraseña inválida. Debe contener al menos 8 caracteres, una letra y un número.',
-    })
+    return res.status(400).json({ error: 'Contraseña inválida. Debe contener al menos 8 caracteres, una letra y un número.' })
   }
 
   try {
     const userExists = await userSchema.findOne({ email })
 
     if (userExists) {
-      return res
-        .status(400)
-        .json({ error: 'El correo electrónico ya está registrado.' })
+      return res.status(400).json({ error: 'El correo electrónico ya está registrado.' })
     }
 
     const passwordHash = await bcrypt.hash(password, 10)
@@ -59,15 +46,11 @@ const register = async (req, res) => {
       email,
       password: passwordHash,
       role: role || 'user',
-      status: 'active',
+      status: 'active'
     })
 
     const userSaved = await newUser.save()
-    const token = await createAccessToken(
-      { id: userSaved._id, role: userSaved.role },
-      TOKEN_SECRET,
-      { expiresIn: '1h' }
-    )
+    const token = await createAccessToken({ id: userSaved._id, role: userSaved.role }, TOKEN_SECRET, { expiresIn: '1h' })
 
     res.cookie('token', token)
 
@@ -77,7 +60,7 @@ const register = async (req, res) => {
       lastname: userSaved.lastname,
       email: userSaved.email,
       status: userSaved.status,
-      createdAt: userSaved.createdAt,
+      createdAt: userSaved.createdAt
     })
   } catch (error) {
     console.log(error)
@@ -91,46 +74,28 @@ const login = async (req, res) => {
   try {
     const userFound = await userSchema.findOne({ email })
 
-    if (!userFound)
-      return res.status(400).json({ message: 'Usuario no encontrado' })
+    if (!userFound) return res.status(400).json({ message: 'Usuario no encontrado' })
 
     // Verificar el estado del usuario
     if (userFound.status === 'inactive') {
-      return res.status(401).json({
-        message:
-          'Su cuenta ha sido desactivada. Comuníquese con soporte. mailsoporte@.com',
-      })
+      return res.status(401).json({ message: 'Su cuenta ha sido desactivada. Comuníquese con soporte. mailsoporte@.com' })
     }
 
     const isMatch = await bcrypt.compare(password, userFound.password)
 
-    if (!isMatch)
-      return res.status(400).json({ message: 'Contraseña incorrecta' })
+    if (!isMatch) return res.status(400).json({ message: 'Contraseña incorrecta' })
 
+    const token = await createAccessToken({ id: userFound._id, role: userFound.role }, TOKEN_SECRET, { expiresIn: '1h' })
 
-    const token = await createAccessToken(
-      { id: userFound._id, role: userFound.role },
-      TOKEN_SECRET,
-      { expiresIn: '1h' }
-    )
-
-
-    res.cookie('token', token, {
-      sameSite: 'lax',
-      secure: true,
-    })
+    res.cookie('token', token, { sameSite: 'none', secure: true })
 
     res.json({
       id: userFound._id,
       username: userFound.name,
       lastname: userFound.lastname,
       email: userFound.email,
-
       token,
       createdAt: userFound.createdAt
-
-      createdAt: userFound.createdAt,
-
     })
   } catch (error) {
     res.status(500).json({ message: error.message })
@@ -139,7 +104,7 @@ const login = async (req, res) => {
 
 const logout = (req, res) => {
   res.cookie('token', '', {
-    expires: new Date(0),
+    expires: new Date(0)
   })
   return res.sendStatus(200)
 }
@@ -147,8 +112,7 @@ const logout = (req, res) => {
 const profile = async (req, res) => {
   const userFound = await userSchema.findById(req.user.id)
 
-  if (!userFound)
-    return res.status(400).json({ message: 'Usuario no encontrado' })
+  if (!userFound) return res.status(400).json({ message: 'Usuario no encontrado' })
 
   return res.json({
     id: userFound._id,
@@ -156,13 +120,10 @@ const profile = async (req, res) => {
     lastname: userFound.lastname,
     email: userFound.email,
     createdAt: userFound.createdAt,
-    updatedAt: userFound.updatedAt,
+    updatedAt: userFound.updatedAt
   })
 }
 
 module.exports = {
-  register,
-  login,
-  logout,
-  profile,
+  register, login, logout, profile
 }
