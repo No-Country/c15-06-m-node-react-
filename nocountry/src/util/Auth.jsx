@@ -1,15 +1,23 @@
 import Cookies from 'js-cookie'
-import { Route, Navigate } from 'react-router-dom'
+import { useNavigate, Outlet } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
 
 export function isAuthenticated() {
-  const token = Cookies.get('token')
-  console.log(token)
-  return !!token
+  // Cambiar a cookie
+  // const token = Cookies.get('token')
+  // console.log(token)
+  // return !!token
+  return useSelector(state => state.user.userAuth)
 }
 
 export function ProtectedRoute({ children }) {
+  const navigate = useNavigate()
+
   if (!isAuthenticated()) {
-    return <Navigate to='/login' />
+    navigate('/login')
   }
-  return { children }
+
+  console.log('ProtectedRoute')
+  return children
 }

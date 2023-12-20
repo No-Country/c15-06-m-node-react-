@@ -1,4 +1,5 @@
 import { Main } from '../layouts/Main'
+import { isAuthenticated } from '../util/Auth'
 
 export function Home() {
   return (

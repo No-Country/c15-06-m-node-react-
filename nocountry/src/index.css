@@ -3,3 +3,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev{
+    background-color: #8F5D3D;
+    border-radius: 50%;
+    top: 40%;
+}
+
+.slick-arrow.slick-prev{
+    left: -50px;
+}
+
+.slick-arrow.slick-next{
+    right: -20px;
+}
+
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover{
+    background-color: #8F5D3D;
+}

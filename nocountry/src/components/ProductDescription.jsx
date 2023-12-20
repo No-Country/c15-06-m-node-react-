@@ -1,3 +1,6 @@
+import { ButtonAddToCart } from './ButtonAddToCart'
+import { IncrementAmount } from './IncrementAmount'
+
 export function ProductDescription({ product }) {
   return (
     <>
@@ -20,6 +23,15 @@ export function ProductDescription({ product }) {
           </h1>
           <p>{product.description}</p>
           <p className='text-3xl'>${product.price}</p>
+
+          <div className='flex justify-evenly items-center mt-20'>
+            <div className='block'>
+              <IncrementAmount product={product} />
+            </div>
+            <div className='w-1/3'>
+              <ButtonAddToCart product={product} />
+            </div>
+          </div>
         </section>
       </article>
 
@@ -37,6 +49,8 @@ export function ProductDescription({ product }) {
         />
         <p className='text-2xl'>${product.price}</p>
         <p>{product.description}</p>
+        <IncrementAmount product={product} />
+        <ButtonAddToCart product={product} />
       </article>
     </>
   )
