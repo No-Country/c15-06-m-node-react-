@@ -10,6 +10,7 @@ import { setUserData, setUserAuth } from '../redux/userSlice'
 import { isAuthenticated } from '../util/Auth'
 import { ArrowLeftIcon } from '../assets/icons/Icons'
 import { validations } from '../constants/Validations'
+import Cookies from 'js-cookie'
 
 export function Login() {
   const dispatch = useDispatch()
@@ -35,10 +36,11 @@ export function Login() {
       url: '/login',
       options: { credentials: 'include' },
     })
-    console.log(serverResponse)
+
     setResponse(serverResponse)
     // Cambiar a cookie
     if (serverResponse?.id) {
+      Cookies.set('token', serverResponse.token)
       dispatch(setUserData(serverResponse.user))
       dispatch(setUserAuth(true))
       Navigate('/')

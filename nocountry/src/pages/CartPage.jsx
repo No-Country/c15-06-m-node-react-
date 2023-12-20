@@ -1,36 +1,30 @@
 import { CartItem } from '../components/CartItem'
-
-const products = [
-  {
-    id: 1,
-    name: 'Avena',
-    imageUrl: 'https://via.placeholder.com/150',
-    price: 10,
-  },
-  {
-    id: 2,
-    name: 'Product 2',
-    imageUrl: 'https://via.placeholder.com/150',
-    price: 20,
-  },
-  {
-    id: 3,
-    name: 'Product 3',
-    imageUrl: 'https://via.placeholder.com/150',
-    price: 30,
-  },
-]
+import { useEffect, useState } from 'react'
+import { useGetData } from '../hooks/useGetData'
+import { Loading } from '../layouts/Loading'
 
 export function CartPage() {
-  const totalPrice = products.reduce((acc, product) => acc + product.price, 0)
-  console.log('cart')
+  const [update, setUpdate] = useState(false)
+
+  const URL = '/cart'
+  const { data, error, loading } = useGetData(URL, update, {
+    credentials: 'include',
+  })
+
+  const totalPrice = data?.productCart
+    .reduce((acc, product) => acc + product.price, 0)
+    .toFixed(2)
+
   return (
     <main className='flex flex-col gap-4 p-4 px-96'>
       <div>
         <p className='text-3xl font-bold'>Carrito</p>
       </div>
-      {products.map(product => (
-        <CartItem key={product.id} product={product} />
+
+      {error && <p>{error}</p>}
+
+      {data?.productCart.map(product => (
+        <CartItem key={product._id} product={product} setUpdate={setUpdate} />
       ))}
 
       <div className='flex justify-end pr-10'>
