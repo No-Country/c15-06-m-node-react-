@@ -26,7 +26,7 @@ export function ProductCard({ product }) {
             <h1 className='text-gray-800 text-center mt-1 text-2xl font-rajdhani font-semibold'>
               {product.name}
             </h1>
-            <p className='text-center text-gray-800 mt-1 font-bold text-xl font-rajdhani mt-10'>
+            <p className='text-center text-gray-800 font-bold text-xl font-rajdhani mt-10'>
               $ {product.price}
             </p>
           </div>
