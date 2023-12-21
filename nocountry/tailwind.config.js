@@ -13,6 +13,7 @@ export default {
         inter: ['Inter', 'sans-serif'],
         rajdhani: ['Rajdhani', 'sans-serif'],
         raleway: ['Raleway', 'sans-serif'],
+        nunito: ['Nunito Sans', 'sans-serif'],
       },
       colors: {
         palette: {
