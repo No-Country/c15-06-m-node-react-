@@ -7,7 +7,7 @@ export function CategoryItem({ category }) {
     <>
       <Link
         to={`/products/category/${category}`}
-        className='hover:underline hidden md:block'>
+        className=' hidden md:block font-rajdhani font-medium hover:bg-palette-nonary hover:rounded-xl hover:bg-opacity-50 hover:p-2'>
         {categoryUpperCase}
       </Link>
     </>

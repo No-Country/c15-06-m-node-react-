@@ -54,7 +54,7 @@ const overlayStyle = {
   return (
     <div className='w-full flex justify-center md:justify-end items-center p-4 md:p-10 md:relative h-[150px]' style={containerStyle}>
       <div style={overlayStyle} />
-      <h1 className='text-4xl font-bold md:absolute md:top-1/2 md:bottom-0 md:right-40'>
+      <h1 className='text-4xl font-bold md:absolute md:top-1/2 md:bottom-0 md:right-40 font-nunito'>
         {category}
       </h1>
     </div>
