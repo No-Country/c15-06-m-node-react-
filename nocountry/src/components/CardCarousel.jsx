@@ -76,7 +76,7 @@ export function CardCarousel() {
 
     return (
         <div className='m-auto w-[90%]'>
-            <div className='my-10'>
+            <div className='my-10 mb-28'>
                 <Slider {...settings}>
                     {data.map((d) => (
                         <div className="h-[670px] w-[360px]">
