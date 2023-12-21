@@ -30,6 +30,7 @@ const getAllProducts = async (req, res) => {
       // Filtrar por categoría (en minúsculas para ser insensible a mayúsculas)
       const categoriaLower = category.toLowerCase()
       filter.category = categoriaLower
+      console.log('Categoría utilizada en la consulta:', categoriaLower);
     }
 
     if (!isNaN(priceMin)) {
