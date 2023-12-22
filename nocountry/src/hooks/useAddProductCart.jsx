@@ -23,6 +23,7 @@ export async function useAddProductCart({ product, image }) {
     }
   )
   const data = await response.json()
+  console.log({ name, price, imageUrl })
   console.log(data)
   return data
 }

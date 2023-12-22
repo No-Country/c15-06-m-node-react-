@@ -1,6 +1,7 @@
 import { ButtonDeleteProduct } from './ButtonDeleteProduct'
 
 export function CartItem({ product, setUpdate }) {
+  console.log(product)
   return (
     <article className='flex gap-4 w-full justify-between items-center '>
       <div className='flex justify-center items-center gap-10'>
