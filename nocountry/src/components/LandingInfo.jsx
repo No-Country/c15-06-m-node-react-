@@ -1,4 +1,6 @@
-import LandingImg from '../imgs/VidaSustentable.jpg';
+import LandingImg from '../imgs/vidaSustentable.jpg';
+/* import LandingImg from '../imgs/VidaSustentable.jpg'; */
+
 
 export function LandingInfo() {
     return(
