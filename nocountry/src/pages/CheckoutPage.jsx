@@ -32,9 +32,11 @@ export function CheckoutPage() {
   }, [update])
 
   return (
-    <main className='flex flex-col gap-4 p-4 px-96'>
+    <main className='flex flex-col gap-4 p-4 md:px-96'>
       <div>
-        <p className='text-3xl font-bold'>Esta seguro que desea comprar?</p>
+        <p className='text-3xl font-bold'>
+          ¿Esta seguro que desea comprar los productos?
+        </p>
       </div>
 
       {error && <p>{error}</p>}
@@ -45,7 +47,7 @@ export function CheckoutPage() {
             <img
               src={product.imageUrl}
               alt={product.name}
-              className='w-24 h-24'
+              className='w-24 h-24 hidden md:block'
             />
             <div>
               <h3 className='text-xl'>{product.name}</h3>

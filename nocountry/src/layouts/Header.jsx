@@ -13,7 +13,9 @@ export function Header() {
         <Link to='/'>
           <Logo />
         </Link>
-        <SearchBar />
+        <div className='md:w-4/12 '>
+          <SearchBar />
+        </div>
         {isAuthenticated() ? (
           <HeaderIcons />
         ) : (
@@ -22,6 +24,24 @@ export function Header() {
             <ButtonLogin />
           </div>
         )}
+      </header>
+
+      <header className='flex flex-col  w-full border-b border-gray-200 bg-white md:hidden items-center p-30 relative justify-center gap-2'>
+        <Link to='/'>
+          <Logo />
+        </Link>
+
+        <div className='w-full flex px-4 justify-between'>
+          <SearchBar />
+          {isAuthenticated() ? (
+            <HeaderIcons />
+          ) : (
+            <div>
+              <ButtonRegister />
+              <ButtonLogin />
+            </div>
+          )}
+        </div>
       </header>
     </>
   )
