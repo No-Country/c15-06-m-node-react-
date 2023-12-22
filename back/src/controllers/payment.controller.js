@@ -25,7 +25,7 @@ const createOrder = async (req, res) => {
         quantity: item.amount
       })),
       mode: 'payment',
-      success_url: 'http://localhost:3001/api/success',
+      success_url: 'https://main--ecovidastore1.netlify.app/products',
       cancel_url: 'http://localhost:3001/api/cancel'
     })
 

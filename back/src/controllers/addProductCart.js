@@ -3,7 +3,7 @@ const productSchema = require('../models/products')
 const ongSchema = require('../models/ong')
 
 const addProductCart = async (req, res) => {
-  const { name, imageUrl, price, description, category } = req.body
+  const { name, price, description, category } = req.body
 
   try {
     // Verifica si el producto existe en la base de datos de productos
@@ -22,7 +22,6 @@ const addProductCart = async (req, res) => {
     } else if ((existingProduct || existingOng) && !productInCart) {
       const newCartItem = new cartSchema({
         name,
-        imageUrl,
         price,
         description,
         amount: 1,

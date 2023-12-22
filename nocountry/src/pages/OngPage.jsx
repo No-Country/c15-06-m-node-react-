@@ -9,7 +9,7 @@ export function OngPage() {
                 <OngItem></OngItem>
                 <OngInfo></OngInfo>
             </div>
-            <OngBoton></OngBoton>
+            <div className="flex justify-center mb-16 ml-[750px] -mt-20"><OngBoton></OngBoton></div>
         </div>
     )
 }
