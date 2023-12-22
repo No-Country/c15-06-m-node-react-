@@ -1,3 +1,5 @@
+import { LandingButton } from "./LandingButton"
+
 export function LandingInfo() {
   return (
     <div className='flex justify-center mt-10 mx-20'>
@@ -10,6 +12,7 @@ export function LandingInfo() {
           tu bienestar y el del planeta. Siente la diferencia de una elección
           consciente.
         </p>
+        <div className='flex justify-center mt-20'><LandingButton></LandingButton></div>
       </div>
       <div>
         <div className='w-[560px] h-[640px]'>
