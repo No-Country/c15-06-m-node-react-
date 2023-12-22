@@ -8,7 +8,7 @@ export function CardCarousel() {
     const data = [
         {
             name: 'Frutos secos y cereales',
-            img: 'https://img.freepik.com/foto-gratis/cucharas-varios-frutos-secos_23-2147803683.jpg?w=740&t=st=1703137374~exp=1703137974~hmac=b7dd8abb54e94bdd517be7a5f2cda1c3671907dc58cc675edf764d6162e8bad3',
+            img: 'https://img.freepik.com/foto-gratis/vista-superior-cucharas-variedad-nueces_23-2148452903.jpg?w=900&t=st=1703014365~exp=1703014965~hmac=c025917c23989a7dd8abcaa31aad4fea60792d9464c8ce4bd014499da65215f4',
             url: '/products/category/Frutos%20secos%20y%20cereales'
         },
         {
@@ -40,38 +40,11 @@ export function CardCarousel() {
     ]
 
     const settings = {
-        accessibility: true,
         dots: true,
         inifinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
     }
 
     return (
@@ -86,9 +59,7 @@ export function CardCarousel() {
 
                             <div className="font-rajdhani flex flex-col justify-center items-center gap-4 p-4" >
                                 <p className="font-medium text-xl">{d.name}</p>
-                                <button className="text-palette-quaternary font-semibold text-xl px-8 py-3 rounded-lg border border-palette-quaternary hover:bg-palette-quaternary hover:text-white">
-                                    <Link to={d.url}>Ver ahora!</Link>
-                                </button>
+                                <Link to={d.url} className="text-palette-quaternary font-semibold text-xl px-8 py-3 rounded-lg border border-palette-quaternary hover:bg-palette-quaternary hover:text-white">Ver ahora!</Link>
                             </div>
                         </div>
                     ))}

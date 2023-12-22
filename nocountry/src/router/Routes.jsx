@@ -13,6 +13,10 @@ import { ResultSearch } from '../pages/ResultSearch'
 import { ProtectedRoute } from '../util/Auth'
 import { OngPayment } from '../pages/OngPayment'
 import { OngPage } from '../pages/OngPage'
+import { CheckoutPage } from '../pages/CheckoutPage'
+import { OngPrevPage } from '../pages/OngPrevPage'
+import { CompraExitosa } from "../components/CompraExitosa"
+
 
 export function Router() {
   return (
@@ -28,9 +32,19 @@ export function Router() {
           />
           <Route path='/ong-payment' element={<OngPayment />} />
           <Route path='/ong' element={<OngPage />} />
+          <Route path='/ong-prev' element={<OngPrevPage />} />
+          <Route path='/compra-exitosa' element={<CompraExitosa />} />
           <Route path='/search' element={<ResultSearch />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route
+            path='/checkout'
+            element={
+              <ProtectedRoute>
+                <CheckoutPage />
+              </ProtectedRoute>
+            }
+          />
 
           <Route
             path='/cart'

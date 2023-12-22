@@ -26,6 +26,8 @@ export default {
           septenary: '#FFFAC2',
           octonary: '#4CAF50',
           nonary: '#C8BFA9',
+          denary: '#EDF7ED',
+          duodenary: '#2F5C4B',
         },
       },
     },

@@ -7,9 +7,9 @@
  * @param {string} product.imageUrl - The URL of the product image.
  * @return {Promise<object>} A Promise that resolves to the response data.
  */
-export async function useAddProductCart({ product }) {
-  const { name, price, imageUrl } = product
-  const image = imageUrl[0]
+export async function useAddProductCart({ product, image }) {
+  const { name, price } = product
+  const imageUrl = image
 
   const response = await fetch(
     `${import.meta.env.VITE_BACKEND_URL}/cartproduct`,
@@ -18,11 +18,12 @@ export async function useAddProductCart({ product }) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, price, image }),
+      body: JSON.stringify({ name, price, imageUrl }),
       credentials: 'include',
     }
   )
   const data = await response.json()
+  console.log({ name, price, imageUrl })
   console.log(data)
   return data
 }
