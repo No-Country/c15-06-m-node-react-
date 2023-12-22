@@ -13,6 +13,7 @@ import { ResultSearch } from '../pages/ResultSearch'
 import { ProtectedRoute } from '../util/Auth'
 import { OngPayment } from '../pages/OngPayment'
 import { OngPage } from '../pages/OngPage'
+import { CheckoutPage } from '../pages/CheckoutPage'
 
 export function Router() {
   return (
@@ -31,6 +32,14 @@ export function Router() {
           <Route path='/search' element={<ResultSearch />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
+          <Route
+            path='/checkout'
+            element={
+              <ProtectedRoute>
+                <CheckoutPage />
+              </ProtectedRoute>
+            }
+          />
 
           <Route
             path='/cart'

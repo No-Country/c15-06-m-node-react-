@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-key */
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Link } from "react-router-dom";
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import { Link } from 'react-router-dom'
 
 export function CardCarousel() {
     const data = [
@@ -39,40 +39,40 @@ export function CardCarousel() {
         }
     ]
 
-    const settings = {
-        accessibility: true,
-        dots: true,
-        inifinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    }
+  const settings = {
+    accessibility: true,
+    dots: true,
+    inifinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  }
 
     return (
         <div className='m-auto w-[90%]'>
@@ -84,16 +84,16 @@ export function CardCarousel() {
                                 <img src={d.img} alt={d.name} className="h-[530px] w-[360px] object-cover rounded-2xl shadow-md" style={{ objectPosition: d.objectPosition || 'center center' }} />
                             </div>
 
-                            <div className="font-rajdhani flex flex-col justify-center items-center gap-4 p-4" >
-                                <p className="font-medium text-xl">{d.name}</p>
-                                <button className="text-palette-quaternary font-semibold text-xl px-8 py-3 rounded-lg border border-palette-quaternary hover:bg-palette-quaternary hover:text-white">
-                                    <Link to={d.url}>Ver ahora!</Link>
-                                </button>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+              <div className='font-rajdhani flex flex-col justify-center items-center gap-4 p-4'>
+                <p className='font-medium text-xl'>{d.name}</p>
+                <button className='text-palette-quaternary font-semibold text-xl px-8 py-3 rounded-lg border border-palette-quaternary hover:bg-palette-quaternary hover:text-white'>
+                  <Link to={d.url}>Ver ahora!</Link>
+                </button>
+              </div>
             </div>
-        </div>
-    )
+          ))}
+        </Slider>
+      </div>
+    </div>
+  )
 }

@@ -21,20 +21,20 @@ export function ProductCard({ product }) {
             className='w-full h-full object-cover rounded-2xl aspect-square'
           />
         </div>
-        <div className='p-4 flex flex-col items-center  justify-between'>
+        <div className='pt-2 flex flex-col items-center  justify-between'>
           <div>
-            <h1 className='text-gray-800 text-center mt-1 text-2xl font-rajdhani font-semibold'>
+            <h1 className='text-gray-800 text-center mt-1 text-xl font-rajdhani font-semibold'>
               {product.name}
             </h1>
-            <p className='text-center text-gray-800 font-bold text-xl font-rajdhani mt-10'>
+            <p className='text-center text-gray-800 font-bold text-xl font-rajdhani mt-4'>
               $ {product.price}
             </p>
           </div>
         </div>
       </Link>
-      {/* <div className='p-4'>
+      <div className='p-4'>
         <ButtonAddToCart product={product} />
-      </div> */}
+      </div>
     </div>
   )
 }
