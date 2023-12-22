@@ -1,0 +1,46 @@
+Clave;Resumen;Tipo de Test;Estado;Estado
+ES-115;ES-115| TC7: Validar registrarse con botón de google (FRONT);Manual;Finalizada;FAILED
+ES-108;ES-97|TC 5: Validar  mensaje de error al intentar pagar productos sin haber agregado productos en el carrito  ;Manual;Finalizada;PASSED
+ES-107;ES-97| TC 4: Verificar generación exitosa del pago cuando se ingresan los datos de la tarjeta y se confirma el pago;Manual;Finalizada;PASSED
+ES-106;"ES-97|TC3 :Validar redirección exitosa  al carrito cuando el usuario hace clic en ""cancelar""";Manual;Finalizada;PASSED
+ES-105;"ES-97|TC2:Validar redirección exitosa a la pasarela de pagos cuando el usuario hace clic en ""Aceptar""";Manual;Finalizada;PASSED
+ES-104;ES-96|TC1: Validar  generar la compra del los productos ;Manual;Finalizada;PASSED
+ES-102;ES-102| TC3: Verificar poder visualizar las imágenes mediante el filtro sin poner TILDES;Manual;Finalizada;PASSED
+ES-101;ES-101| TC10: Verificar no poder iniciar sesión con formato de email no válido(FRONT);Manual;Finalizada;PASSED
+ES-100;ES-100| TC9: Verificar no poder hacer login campos en blanco (FRONT);Manual;Finalizada;PASSED
+ES-99;ES-99| TC8: Verificar no poder iniciar sesión con contraseña inválida(FRONT);Manual;Finalizada;PASSED
+ES-98;ES-98| TC7: Verificar poder iniciar sesión de manera exitosa en FRONT;Manual;Finalizada;PASSED
+ES-95;ES-95|TC5: Verificar el no poder iniciar sesión rellenando los campos con valores numéricos(FRONT);Manual;Finalizada;PASSED
+ES-94;ES-94| TC4: Validar no poder registrarme con campos vacíos (FRONT);Manual;Finalizada;PASSED
+ES-93;ES-93| TC3: Validar no poder registrarme al poner una contraseña no válida (FRONT);Manual;Finalizada;PASSED
+ES-92;ES-92| TC2: Validar no poder registrarse con un email ya existente;Manual;Finalizada;PASSED
+ES-91;ES-91| TC1: Validar el Registro de usuario_ happy path (FRONT);Manual;Finalizada;PASSED
+ES-89;TC2: Validar Proceso de Pago Exitoso;Manual;Finalizada;PASSED
+ES-80;ES-80| TC2: Verificar que no me muestre productos de otras categorías;Manual;Finalizada;PASSED
+ES-79;ES-79| TC1: Funcionamiento de filtro/search bar +mayúsculas(FRONT);Manual;Finalizada;PASSED
+ES-77;ES-77| TC6: Verificar hacer Login con una contraseña débil o insuficiente (API);Manual;Finalizada;PASSED
+ES-76;ES-76| TC5: Verificar hacer Login con campo contraseña vacío(API);Manual;Finalizada;PASSED
+ES-75;ES-75| TC4: Verificar hacer Login con un formato de email no válido(API);Manual;Finalizada;PASSED
+ES-74;ES-74| TC3: Verificar no poder hacer login con un email en blanco (API);Manual;Finalizada;PASSED
+ES-73;ES-73| TC2: Verificar hacer Login sin email de confirmación (FRONT);Manual;Finalizada;FAILED
+ES-71;TC4: Validar  que al hacer clic sobre la imagen de una ONG, el usuario es dirigido al módulo de descripción de esa ONG;Manual;Finalizada;PASSED
+ES-70;TC3: Validar que se visualice  las imágenes de las  ONG;Manual;Finalizada;PASSED
+ES-69;TC2:  validar que  ingresar al modulo  pago sustentable se visualice una descripcion;Manual;Finalizada;PASSED
+ES-50;ES-50| TC1: Verificar hacer login (happy path API) ;Manual;Finalizada;PASSED
+ES-49;ES-49| TC8: Contraseña campo vacío;Manual;Finalizada;PASSED
+ES-47;ES-47| TC7: Email no válido;Manual;Finalizada;PASSED
+ES-46;ES-46| TC6: Campos vacíos;Manual;Finalizada;PASSED
+ES-45;ES-45| TC5: Registro de usuario NO Válido;Manual;Finalizada;PASSED
+ES-44;ES-44| TC4: usuario campo vacío;Manual;Finalizada;PASSED
+ES-42;TC1: validar  proceso de pago {API};Manual;Finalizada;PASSED
+ES-40;TC1: Validar  que el usuario puede visualizar la lista de tres ONG al encontrarse en el módulo de pago sustentable.;Manual;Finalizada;PASSED
+ES-35;ES-35| TC3: contraseña no válida;Manual;Finalizada;PASSED
+ES-33;ES-33| TC2: Test email duplicado;Manual;Finalizada;PASSED
+ES-27;Test Editar Cantidad;Manual;Finalizada;TO DO
+ES-26;Test Quitar Producto;Manual;Finalizada;TO DO
+ES-25;ES-25| TC1: Registro de usuario en plataforma happy path (API);Manual;Finalizada;PASSED
+ES-24;Test Agregar Producto;Manual;Finalizada;PASSED
+ES-20;Test Verificar Stock de los productos;Manual;Finalizada;PASSED
+ES-19;Test Verificar Descripccion del producto;Manual;Finalizada;PASSED
+ES-18;Test Verificar Precio del producto;Manual;Finalizada;PASSED
+ES-17;Test Verificar Imagen del producto;Manual;Finalizada;PASSED
