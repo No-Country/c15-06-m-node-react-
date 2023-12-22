@@ -32,7 +32,7 @@ export function SearchBar({ ...props }) {
 
   return (
     <>
-      <form className='relative block w-4/12' onSubmit={handleSubmit}>
+      <form className='relative block  ' onSubmit={handleSubmit}>
         <span className='sr-only'>Search</span>
         <span className='absolute inset-y-0 left-0 flex items-center pl-2'>
           <SearchIcon fill='#000' width={20} height={20} />

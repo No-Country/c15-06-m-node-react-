@@ -26,7 +26,7 @@ export function CartPage() {
           <p className='text-3xl font-bold'>No hay productos en el carrito</p>
         </div>
       ) : (
-        <main className='flex flex-col gap-4 p-4 px-96'>
+        <main className='flex flex-col gap-4 p-4 md:px-96'>
           <div>
             <p className='text-3xl font-bold'>Carrito</p>
           </div>
