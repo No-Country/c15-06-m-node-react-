@@ -25,7 +25,7 @@ const createOrder = async (req, res) => {
         quantity: item.amount
       })),
       mode: 'payment',
-      success_url: 'https://main--ecovidastore1.netlify.app/products',
+      success_url: 'https://main--ecovidastore1.netlify.app/compra-exitosa',
       cancel_url: 'http://localhost:3001/api/cancel'
     })
 
