@@ -8,7 +8,7 @@ export function CardCarousel() {
     const data = [
         {
             name: 'Frutos secos y cereales',
-            img: 'https://img.freepik.com/foto-gratis/cucharas-varios-frutos-secos_23-2147803683.jpg?w=740&t=st=1703137374~exp=1703137974~hmac=b7dd8abb54e94bdd517be7a5f2cda1c3671907dc58cc675edf764d6162e8bad3',
+            img: 'https://img.freepik.com/foto-gratis/vista-superior-cucharas-variedad-nueces_23-2148452903.jpg?w=900&t=st=1703014365~exp=1703014965~hmac=c025917c23989a7dd8abcaa31aad4fea60792d9464c8ce4bd014499da65215f4',
             url: '/products/category/Frutos%20secos%20y%20cereales'
         },
         {
